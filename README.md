@@ -2,6 +2,10 @@
 
 This repository contains the source for my [resume](https://grow.elasticplayground.com/).
 
+## About Me
+
+This section will give some background about me.
+
 ## Considerations/Requirements
 
 ### Basic
@@ -15,10 +19,6 @@ This repository contains the source for my [resume](https://grow.elasticplaygrou
 
 - Animations
 - Easter Eggs
-
-## About Me
-
-This section will give some background about me.
 
 ## Contents/Structure
 
