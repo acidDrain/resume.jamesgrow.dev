@@ -1,0 +1,28 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+
+  max-height: 10vh;
+}
+
+.App-header-name {
+  display: flex;
+}
+
+.App-header-title {
+  display: flex;
+}
+
+.App-header-contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.App-header-contact div {
+  display: flex;
+  /* flex: 0 1 auto; */
+}
