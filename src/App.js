@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import Header from "./header/Header";
+
+import "./App.css";
+
+import data from "./data.json";
 
 class App extends Component {
   render() {
+    const contactInfo = data.resume_data.sections.contactInfo;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header contactInfo={contactInfo} />
       </div>
     );
   }

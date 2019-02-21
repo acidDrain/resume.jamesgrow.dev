@@ -1,0 +1,30 @@
+{
+  "resume_data": {
+    "sections": {
+      "vendor": {},
+      "workHistory": {},
+      "keySkills": {},
+      "interestingProjects": {},
+      "programmingLanguages": {},
+      "systems": {},
+      "openSource": {},
+      "sideProjects": {},
+      "thingsToLearn": {},
+      "summaryBlurb": {},
+      "contactInfo": {
+        "name": "James Grow",
+        "title": "Solutions Architect",
+        "email": "jmgrow@gmail.com",
+        "twitter": {
+          "name": "@jamesmgrow",
+          "href": "https://twitter.com/jamesmgrow"
+        },
+        "linkedin": {
+          "name": "jamesmgrow",
+          "href": "https://www.linkedin.com/in/jamesmgrow/"
+        }
+      }
+    }
+  },
+  "theme": ""
+}
