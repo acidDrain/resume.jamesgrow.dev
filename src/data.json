@@ -22,6 +22,10 @@
         "linkedin": {
           "name": "jamesmgrow",
           "href": "https://www.linkedin.com/in/jamesmgrow/"
+        },
+        "github": {
+          "href": "https://github.com/acidDrain",
+          "name": "acidDrain"
         }
       }
     }

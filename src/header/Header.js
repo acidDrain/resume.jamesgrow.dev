@@ -1,19 +1,22 @@
 import React from "react";
 import "./Header.css";
 
-export default ({ contactInfo }) => (
+export default ({ name, email, title, github, linkedin, twitter }) => (
   <header className="App-header">
-    <div className="App-name">{contactInfo.name}</div>
-    <div className="App-header-title">{contactInfo.title}</div>
+    <div className="App-name">{name}</div>
+    <div className="App-header-title">{title}</div>
     <div className="App-header-contact">
-      <div>E-mail: {contactInfo.email}</div>
       <div>
-        Twitter:{" "}
-        <a href={contactInfo.twitter.href}>{contactInfo.twitter.name}</a>
+        E-mail: <a href="#">{email}</a>
       </div>
       <div>
-        LinkedIn:{" "}
-        <a href={contactInfo.linkedin.href}>{contactInfo.linkedin.name}</a>
+        Twitter: <a href={twitter.href}>{twitter.name}</a>
+      </div>
+      <div>
+        LinkedIn: <a href={linkedin.href}>{linkedin.name}</a>
+      </div>
+      <div>
+        GitHub: <a href={github.href}>{github.name}</a>
       </div>
     </div>
   </header>
