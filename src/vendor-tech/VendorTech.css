@@ -1,0 +1,4 @@
+.vendor-tech {
+  grid-area: vendor-tech;
+  display: flex;
+}

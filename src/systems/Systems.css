@@ -1,0 +1,4 @@
+.systems {
+  grid-area: systems;
+  display: flex;
+}

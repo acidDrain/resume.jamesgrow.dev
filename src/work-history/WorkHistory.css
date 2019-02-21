@@ -1,0 +1,4 @@
+.work-history {
+  grid-area: work-history;
+  display: flex;
+}
