@@ -14,6 +14,8 @@ This section will give some background about me.
 - Themed (Color Scheme, Fonts, etc?)
 - Cross-Browser Support (excepting IE)
 - Hosted on AWS (S3)
+- Logging Support
+- Query Param support
 
 ### Future/Planned
 
@@ -22,4 +24,16 @@ This section will give some background about me.
 
 ## Contents/Structure
 
-This section will describe contents/structure of the resume.
+Sections:
+
+- Technology / Vendor Product Experience
+- Work History/Experience
+- Key Skills and Details
+- Interesting Projects / Experience / Highlights
+- Programming Languages and Frameworks
+- Systems
+- Open Source Experience
+- Side Projects / Things I'm Learning or Experimenting With
+- Things I Want to Learn or Experiment with Next
+- Summary Blurb
+- Contact Info
