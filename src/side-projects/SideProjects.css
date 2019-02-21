@@ -1,0 +1,4 @@
+.side-projects {
+  grid-area: side-projects;
+  display: flex;
+}
