@@ -24,8 +24,8 @@ This section will give some background about me.
 
 ## Contents/Structure
 
-- Technology / Vendor Product Experience
-- Work History/Experience
+- Vendor Technology and Product Experience
+- Work History
 - Key Skills and Details
 - Interesting Projects / Experience / Highlights
 - Programming Languages and Frameworks
