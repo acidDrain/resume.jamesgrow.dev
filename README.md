@@ -24,8 +24,6 @@ This section will give some background about me.
 
 ## Contents/Structure
 
-Sections:
-
 - Technology / Vendor Product Experience
 - Work History/Experience
 - Key Skills and Details
