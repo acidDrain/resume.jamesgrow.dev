@@ -1,0 +1,4 @@
+.learn-next {
+  grid-area: learn-next;
+  display: flex;
+}
