@@ -1,0 +1,14 @@
+.blurb {
+  grid-area: blurb;
+  display: flex;
+  border: 1px solid white;
+}
+
+.blurb-heading {
+  display: flex;
+}
+
+.blurb-text {
+  display: flex;
+  flex-direction: column;
+}

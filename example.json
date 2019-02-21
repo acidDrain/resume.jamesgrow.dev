@@ -10,8 +10,24 @@
       "openSource": {},
       "sideProjects": {},
       "thingsToLearn": {},
-      "summaryBlurb": {},
-      "contactInfo": {}
+      "blurb": {},
+      "contactInfo": {
+        "name": "Ex Ample",
+        "title": "Some Title",
+        "email": "example99999@gmail.com",
+        "twitter": {
+          "name": "@example99999",
+          "href": "https://twitter.com/example99999"
+        },
+        "linkedin": {
+          "name": "example99999",
+          "href": "https://www.linkedin.com/in/example99999/"
+        },
+        "github": {
+          "href": "https://github.com/example99999",
+          "name": "example99999"
+        }
+      }
     }
   },
   "theme": ""

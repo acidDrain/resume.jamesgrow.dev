@@ -2,10 +2,10 @@ import React from "react";
 import "./Header.css";
 
 export default ({ name, email, title, github, linkedin, twitter }) => (
-  <header className="App-header">
-    <div className="App-name">{name}</div>
-    <div className="App-header-title">{title}</div>
-    <div className="App-header-contact">
+  <header className="header">
+    <div className="name">{name}</div>
+    <div className="header-title">{title}</div>
+    <div className="header-contact">
       <div>
         E-mail: <button className="link-button">{email}</button>
       </div>

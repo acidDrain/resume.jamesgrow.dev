@@ -10,7 +10,10 @@
       "openSource": {},
       "sideProjects": {},
       "thingsToLearn": {},
-      "summaryBlurb": {},
+      "blurb": {
+        "heading": "",
+        "text": "I'm a highly motivated self starter with an obsession for learning new things.\nI jumped from 8th grade into college full time (skipping high school altogether), but left before completing my degree to focus on developing and learning through my career.\nI started with programming in C++ and Linux systems administration, pivoted to networking, moved on to information security for ~7-8 years, and finally landed in DevOps. My passions right now are functional programming (Haskell, OCaml, ReasonML, and dare I say... JavaScript?), cloud, microservices through containerization/serverless/unikernels, continuous delivery by way of automation, and Everything-as-Code.\nI've accumulated a massive breadth of knowledge and experience across networking, information security (network security, application security, and system security), incident response, compliance, cloud, applications and systems architecture, etc..\nI've worked in network/security operations, management (led a team of 14), security architecture, sales (as a Solutions Architect), and led a DevOps team within an R&D organization. I'm at a startup currently, leading our effort to build a solid continuous delivery pipeline as a Site Reliability Engineer. My focus right now is on designing/building/scaling our cloud environment via microservices, continuous delivery pipeline, and developing a platform focused on machine learning. Occasionally, I also assist our professional services team as an SME in InfoSec and DevOps practices."
+      },
       "contactInfo": {
         "name": "James Grow",
         "title": "Solutions Architect",
