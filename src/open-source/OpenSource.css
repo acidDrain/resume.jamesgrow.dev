@@ -1,0 +1,4 @@
+.open-source {
+  grid-area: open-source;
+  display: flex;
+}
