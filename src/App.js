@@ -11,7 +11,7 @@ class App extends Component {
     const contactInfo = data.resume_data.sections.contactInfo;
     return (
       <div className="App">
-        <Header contactInfo={contactInfo} />
+        <Header {...contactInfo} />
       </div>
     );
   }
