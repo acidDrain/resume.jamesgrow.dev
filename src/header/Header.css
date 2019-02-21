@@ -30,3 +30,11 @@
 .App-header-contact div a {
   padding: 0 1rem;
 }
+
+.link-button {
+  padding: 0 1rem;
+  text-decoration: underline;
+  color: #f7f7f8;
+  border: none;
+  background-color: transparent;
+}

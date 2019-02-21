@@ -7,7 +7,7 @@ export default ({ name, email, title, github, linkedin, twitter }) => (
     <div className="App-header-title">{title}</div>
     <div className="App-header-contact">
       <div>
-        E-mail: <a href="#">{email}</a>
+        E-mail: <button className="link-button">{email}</button>
       </div>
       <div>
         Twitter: <a href={twitter.href}>{twitter.name}</a>
