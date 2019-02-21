@@ -1,0 +1,4 @@
+.programming {
+  grid-area: programming;
+  display: flex;
+}
