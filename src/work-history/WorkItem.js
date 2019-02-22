@@ -44,5 +44,3 @@ export default ({ company, positions }) => (
     <PositionList positionList={positions} />
   </div>
 );
-
-// positions [{startDate, endDate, title, description, location}]

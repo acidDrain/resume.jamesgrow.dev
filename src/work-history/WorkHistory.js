@@ -19,5 +19,3 @@ export default ({ workHistory }) => (
     </ul>
   </div>
 );
-// company
-// positions [{startDate, endDate, title, description, location}]

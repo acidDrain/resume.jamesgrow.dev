@@ -2,9 +2,6 @@
   grid-area: programming;
   display: flex;
   flex-direction: column;
-  /* font-size: 0.9rem; */
-  /* max-height: calc(40vh);
-  overflow: scroll; */
 }
 
 .programming-title {

@@ -1,23 +1,19 @@
 .App {
   display: grid;
-  /* border-color: #f7f1f8; */
   min-height: 200vh;
-  /* min-height: calc(100%); */
-  margin: auto;
-  max-width: calc(85vw);
-  /* padding: 0 10vw 0 10vw; */
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minmax(20vh, auto);
-  /* grid-template-rows: repeat(auto, 1fr); */
-  /* grid-template-rows: 1fr repeat(1, 1fr); */
-  /* grid-template-rows: fit-content(40%); */
-  /* grid-template-rows: minmax(100px, max-content) repeat(, 20vw); */
-  /* grid-template-rows: 1fr repeat(auto-fill, 1fr) 1fr; */
+  padding: 2rem;
+  margin: 0 5rem;
   grid-template-areas:
-    " header header header header header header "
-    " blurb blurb blurb blurb blurb blurb "
-    " vendor-tech work-history work-history work-history work-history side-projects "
-    " open-source work-history work-history work-history work-history programming  "
-    " systems work-history work-history work-history work-history learn-next ";
-  /* border: 1px solid; */
+    "... header header ..."
+    "... blurb blurb ..."
+    "vendor-tech work-history work-history side-projects"
+    "open-source work-history work-history programming"
+    "systems work-history work-history learn-next";
+  grid-gap: 2rem;
+}
+
+.App > * {
+  padding: 1rem;
+  border: 0.5px #d0edf1 double;
+  background-color: #181e34;
 }

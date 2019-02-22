@@ -2,7 +2,6 @@
   grid-area: learn-next;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid white; */
   justify-content: flex-start;
   align-self: flex-start;
 }

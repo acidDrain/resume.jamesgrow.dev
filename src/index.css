@@ -12,8 +12,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1d1f20;
-  color: #f7f7f8;
+  background-color: #404e88;
+  color: #f1f3f8;
 }
 
 code {
@@ -24,5 +24,5 @@ code {
 a,
 a:hover,
 a:visited {
-  color: #f7f7f8;
+  color: #f1f3f8;
 }
