@@ -16,46 +16,9 @@
           ]
         },
         {
-          "vendor": "Symantec",
-          "products": ["BlueCoat-ProxySG", "Symantec Endpoint Protection"]
-        },
-        {
-          "vendor": "Fortinet",
-          "products": ["Fortigate", "FortiManager", "FortiAnalayzer"]
-        },
-        { "vendor": "LogRhythm", "products": [""] },
-        { "vendor": "IBM", "products": ["QRadar", "Guardium"] },
-        { "vendor": "F5", "products": ["LTM/GTM/ASM/APM/iRules"] },
-        {
-          "vendor": "Cisco",
-          "products": ["ASA", "FirePower", "Nexus", "Catalyst", "Route/Switch"]
-        },
-        {
-          "vendor": "Juniper Networks",
-          "products": ["SRX", "EX Switches", "J-Series Routers", "MX Routers"]
-        },
-        {
-          "vendor": "Netskope",
-          "products": ["Forward-Proxy", "Reverse-Proxy", "API", "Agent"]
-        },
-        { "vendor": "Splunk", "products": ["Splunk", "ES", "Phantom Cyber"] },
-        { "vendor": "HP", "products": ["ArcSight"] },
-        { "vendor": "Carbon", "products": ["Black Response"] },
-        { "vendor": "FireEye", "products": ["EX", "NX", "HX"] },
-        {
-          "vendor": "Riverbed",
-          "products": ["SteelHead", "Interceptor", "CMC"]
-        },
-        { "vendor": "Imperva", "products": ["WAF", "DAM"] },
-        { "vendor": "Qualys", "products": ["Vulnerability Management"] },
-        {
           "vendor": "Tenable",
           "products": ["Tenable.io", "Nessus", "Security Center"]
         },
-        { "vendor": "Rapid7", "products": ["Metasploit", "insightVM"] },
-        { "vendor": "Proofpoint", "products": ["E-Mail Protection"] },
-        { "vendor": "Salesforce.com", "products": [""] },
-        { "vendor": "Service-Now", "products": [""] },
         {
           "vendor": "Puppet",
           "products": ["Puppet-Agent", "Puppet Server", "Puppet Enterprise"]
@@ -65,9 +28,7 @@
           "products": ["Terraform", "Vault", "Vagrant", "Consul"]
         },
         { "vendor": "CloudBees", "products": ["Jenkins"] },
-        { "vendor": "VMware", "products": ["vSphere", "ESXi"] },
         { "vendor": "Okta", "products": [""] },
-        { "vendor": "SecureAuth", "products": [""] },
         { "vendor": "DataDog", "products": [""] }
       ],
       "workHistory": [
