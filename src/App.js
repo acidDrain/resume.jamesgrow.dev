@@ -18,8 +18,6 @@ class App extends Component {
   render() {
     const vendorTech = data.resume_data.sections.vendorTech;
     const workHistory = data.resume_data.sections.workHistory;
-    const keySkills = data.resume_data.sections.keySkills;
-    const interestingProjects = data.resume_data.sections.interestingProjects;
     const programming = data.resume_data.sections.programming;
     const systems = data.resume_data.sections.systems;
     const openSource = data.resume_data.sections.openSource;
@@ -27,17 +25,20 @@ class App extends Component {
     const learnNext = data.resume_data.sections.learnNext;
     const contactInfo = data.resume_data.sections.contactInfo;
     const blurb = data.resume_data.sections.blurb;
+    // const keySkills = data.resume_data.sections.keySkills;
+    // const interestingProjects = data.resume_data.sections.interestingProjects;
+    // console.log(`learnNext: ${learnNext}`);
     return (
       <div className="App">
         <Header {...contactInfo} />
         <Blurb {...blurb} />
-        <LearnNext {...learnNext} />
-        <OpenSource {...openSource} />
-        <Programming {...programming} />
-        <SideProjects {...sideProjects} />
-        <Systems {...systems} />
-        <VendorTech {...vendorTech} />
-        <WorkHistory {...workHistory} />
+        <LearnNext learnNext={learnNext} />
+        <OpenSource openSource={openSource} />
+        <Programming programming={programming} />
+        <SideProjects sideProjects={sideProjects} />
+        <Systems systems={systems} />
+        <VendorTech vendorTech={vendorTech} />
+        <WorkHistory workHistory={workHistory} />
       </div>
     );
   }

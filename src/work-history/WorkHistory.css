@@ -1,4 +1,41 @@
 .work-history {
   grid-area: work-history;
   display: flex;
+  flex-direction: column;
+}
+
+.work-history-title {
+  display: flex;
+  justify-content: center;
+}
+
+.work-history-company {
+  display: flex;
+}
+
+.work-history-item {
+  display: flex;
+}
+
+.work-history-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-history-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work-history-position-title {
+  display: flex;
+}
+
+.work-history-dates {
+  display: flex;
+}
+
+.work-history-location {
+  display: flex;
 }

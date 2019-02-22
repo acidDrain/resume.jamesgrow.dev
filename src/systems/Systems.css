@@ -1,4 +1,36 @@
 .systems {
   grid-area: systems;
   display: flex;
+  flex-direction: column;
+  /* font-size: 0.9rem; */
+  /* max-height: calc(40vh);
+  overflow: scroll; */
+}
+
+.systems-title {
+  display: flex;
+}
+
+.systems-list {
+  display: flex;
+  padding: 0;
+}
+
+.systems-platform {
+  display: flex;
+  align-self: center;
+  flex: 1 0 auto;
+}
+
+.systems-list ul {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
+.systems-list ul li {
+  display: flex;
+  justify-content: flex-end;
+
+  list-style-type: none;
 }
