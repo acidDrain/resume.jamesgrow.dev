@@ -2,9 +2,6 @@
   grid-area: systems;
   display: flex;
   flex-direction: column;
-  /* font-size: 0.9rem; */
-  /* max-height: calc(40vh);
-  overflow: scroll; */
 }
 
 .systems-title {
@@ -13,24 +10,26 @@
 
 .systems-list {
   display: flex;
+  flex-direction: column;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .systems-platform {
   display: flex;
-  align-self: center;
-  flex: 1 0 auto;
+  align-self: flex-start;
 }
 
 .systems-list ul {
   display: flex;
   flex-direction: column;
-  flex: 0 0 auto;
+  justify-content: space-between;
 }
 
-.systems-list ul li {
+.systems-list > ul > li {
   display: flex;
   justify-content: flex-end;
-
+  flex-direction: column;
   list-style-type: none;
+  margin: 0.15rem;
 }
