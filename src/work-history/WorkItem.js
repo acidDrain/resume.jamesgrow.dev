@@ -1,5 +1,9 @@
 import React from "react";
 
+function splitUpDescriptionText(desc) {
+  return desc.split("\n").map(d => <p>{d}</p>);
+}
+
 function getYearMonthDay(d) {
   if (d < 0) return "Present";
   const ds = new Date(Number(d));
@@ -17,7 +21,9 @@ const Position = ({ title, description, location, startDate, endDate }) => (
       {getYearMonthDay(startDate)} - {getYearMonthDay(endDate)}
     </div>
     <div className="work-history-location">{location}</div>
-    <div className="work-history-description">{description}</div>
+    <div className="work-history-description">
+      {splitUpDescriptionText(description)}
+    </div>
   </div>
 );
 
