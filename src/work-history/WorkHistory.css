@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.work-record {
+  /* display: block; */
+  /* grid-gap: 1rem; */
+}
+
 .work-history-title {
   display: flex;
   justify-content: center;
@@ -23,19 +28,42 @@
 }
 
 .work-history-position {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 1rem;
+  margin: auto;
+  grid-template-areas:
+    "title ..."
+    "dates ..."
+    "location ..."
+    "description description"
+    "... ...";
 }
 
 .work-history-position-title {
   display: flex;
+  grid-area: title;
+  /* border: 1px solid white; */
+}
+
+.work-history-position-title > h4 {
+  padding: 0;
+  margin: 0;
 }
 
 .work-history-dates {
   display: flex;
+  flex: 1 1 auto;
+  grid-area: dates;
 }
 
 .work-history-location {
   display: flex;
+  flex: 1 1 auto;
+  font-style: italic;
+  grid-area: location;
+}
+
+.work-history-description {
+  grid-area: description;
+  line-height: 1.2rem;
 }
