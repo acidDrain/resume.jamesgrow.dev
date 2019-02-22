@@ -4,11 +4,6 @@
   flex-direction: column;
 }
 
-.work-record {
-  /* display: block; */
-  /* grid-gap: 1rem; */
-}
-
 .work-history-title {
   display: flex;
   justify-content: center;

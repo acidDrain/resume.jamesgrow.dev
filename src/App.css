@@ -1,7 +1,7 @@
 .App {
   display: grid;
   min-height: 200vh;
-  /* width: calc(85vw); */
+  padding: 2rem;
   margin: 0 5rem;
   grid-template-areas:
     "... header header ..."
@@ -9,5 +9,11 @@
     "vendor-tech work-history work-history side-projects"
     "open-source work-history work-history programming"
     "systems work-history work-history learn-next";
-  grid-gap: 4rem;
+  grid-gap: 2rem;
+}
+
+.App > * {
+  padding: 1rem;
+  border: 0.5px #d0edf1 double;
+  background-color: #181e34;
 }
