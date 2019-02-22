@@ -8,7 +8,7 @@ export default ({ text, heading }) => (
     {text && (
       <div className="blurb-text">
         {text.split("\n").map(t => (
-          <p>{t}</p>
+          <p key={t}>{t}</p>
         ))}
       </div>
     )}
