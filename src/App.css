@@ -16,4 +16,6 @@
   padding: 1rem;
   border: 0.5px #d0edf1 double;
   background-color: #181e34;
+  -webkit-box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.84);
+  box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.84);
 }
