@@ -5,9 +5,11 @@
   max-width: calc(100vw);
   /* padding: 0 10vw 0 10vw; */
   grid-template-columns: repeat(5, minmax(auto, 20vw));
-  grid-template-rows: 11vh repeat(4, minmax(auto, 22vh));
+  /* grid-template-rows: 10vh repeat(6, minmax(auto, 20vh)); */
+  grid-template-rows: 10vh repeat(6, 1fr 2fr 1fr);
   grid-template-areas:
     "... header header header ... "
+    "... blurb blurb blurb ... "
     "... blurb blurb blurb ... "
     "... vendor-tech work-history side-projects ... "
     "... open-source work-history programming ... "

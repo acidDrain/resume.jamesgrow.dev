@@ -1,15 +1,153 @@
 {
   "resume_data": {
     "sections": {
-      "vendor": {},
-      "workHistory": {},
+      "vendorTech": [
+        { "vendor": "Aqua Security", "products": ["Container Security"] },
+        { "vendor": "Twistlock", "products": ["Container Security"] },
+        { "vendor": "Check Point", "products": ["Firewalls/UTM", "Dome9"] },
+        {
+          "vendor": "Palo Alto Networks",
+          "products": [
+            "Firewalls",
+            "Panorama",
+            "Demisto",
+            "Evident.io",
+            "RedLock"
+          ]
+        },
+        {
+          "vendor": "Symantec",
+          "products": ["BlueCoat-ProxySG", "Symantec Endpoint Protection"]
+        },
+        {
+          "vendor": "Fortinet",
+          "products": ["Fortigate", "FortiManager", "FortiAnalayzer"]
+        },
+        { "vendor": "LogRhythm", "products": [""] },
+        { "vendor": "IBM", "products": ["QRadar"] },
+        { "vendor": "F5", "products": ["LTM/GTM/ASM/APM/iRules"] },
+        {
+          "vendor": "Cisco",
+          "products": ["ASA", "FirePower", "Nexus", "Catalyst", "Route/Switch"]
+        },
+        {
+          "vendor": "Juniper Networks",
+          "products": ["SRX", "EX Switches", "J-Series Routers", "MX Routers"]
+        },
+        {
+          "vendor": "Netskope",
+          "products": ["Forward-Proxy", "Reverse-Proxy", "API", "Agent"]
+        },
+        { "vendor": "Splunk", "products": ["Splunk", "ES", "Phantom Cyber"] },
+        { "vendor": "HP", "products": ["ArcSight"] },
+        { "vendor": "Carbon", "products": ["Black Response"] },
+        { "vendor": "FireEye", "products": ["EX", "NX", "HX"] },
+        {
+          "vendor": "Riverbed",
+          "products": ["SteelHead", "Interceptor", "CMC"]
+        },
+        { "vendor": "Imperva", "products": ["WAF", "DAM"] },
+        { "vendor": "IBM", "products": ["Guardium"] },
+        { "vendor": "Qualys", "products": ["Vulnerability Management"] },
+        {
+          "vendor": "Tenable",
+          "products": ["Tenable.io", "Nessus", "Security Center"]
+        },
+        { "vendor": "Rapid7", "products": ["Metasploit", "insightVM"] },
+        { "vendor": "Proofpoint", "products": ["E-Mail Protection"] },
+        { "vendor": "Salesforce.com", "products": [""] },
+        { "vendor": "Service-Now", "products": [""] },
+        {
+          "vendor": "Puppet",
+          "products": ["Puppet-Agent", "Puppet Server", "Puppet Enterprise"]
+        },
+        {
+          "vendor": "HashiCorp",
+          "products": ["Terraform", "Vault", "Vagrant", "Consul"]
+        },
+        { "vendor": "CloudBees", "products": ["Jenkins"] },
+        { "vendor": "VMware", "products": ["vSphere", "ESXi"] },
+        { "vendor": "Okta", "products": [""] },
+        { "vendor": "SecureAuth", "products": [""] },
+        { "vendor": "DataDog", "products": [""] }
+      ],
+      "workHistory": [
+        {
+          "company": "Fishtech",
+          "positions": [
+            { "date": "", "title": "", "description": "", "location": "" }
+          ]
+        },
+        {}
+      ],
       "keySkills": {},
       "interestingProjects": {},
-      "programmingLanguages": {},
-      "systems": {},
-      "openSource": {},
-      "sideProjects": {},
-      "thingsToLearn": {},
+      "programming": [
+        {
+          "language": "javascript",
+          "component": ["node.js", "typescript", "react", "vanilla", "jest"]
+        },
+        { "language": "bash", "component": [""] },
+        { "language": "python", "component": ["2.7", "3.5", "3.7"] },
+        { "language": "hcl", "component": ["terraform"] },
+        { "language": "ocaml", "component": ["lwt", "ReasonML"] }
+      ],
+      "systems": [
+        {
+          "platform": "Linux",
+          "components": [
+            "Debian Jessie|Stretch|Buster",
+            "Ubuntu",
+            "CentOS X",
+            "RedHat Enterprise Linux X",
+            "Gentoo"
+          ]
+        },
+        {
+          "platform": "Amazon Web Services",
+          "components": ["*"]
+        },
+        {
+          "platform": "Microsoft Azure",
+          "components": [
+            "VM",
+            "Azure Active Directory",
+            "Functions",
+            "App Services",
+            "Resource Manager Templates"
+          ]
+        },
+        {
+          "platform": "Google Cloud Platform",
+          "components": [
+            "GKE",
+            "App Engine",
+            "Bigtable",
+            "Functions",
+            "Compute Engine"
+          ]
+        },
+        { "platform": "GitHub", "components": ["*"] },
+        { "platform": "GitLab", "components": ["*"] }
+      ],
+      "openSource": [
+        { "projectName": "Kafka" },
+        { "projectName": "Docker" },
+        { "projectName": "rkt" },
+        { "projectName": "nginx" },
+        { "projectName": "apache" },
+        { "projectName": "Kubernetes" },
+        { "projectName": "Istio" },
+        { "projectName": "Envoy" },
+        { "projectName": "ConcourseCI" },
+        { "projectName": "ElasticSearch" },
+        { "projectName": "Logstash" },
+        { "projectName": "Kibana" },
+        { "projectName": "Filebeat" },
+        { "projectName": "fluentd" }
+      ],
+      "sideProjects": ["ReasonML/OCaml", "Lisp", "Haskell"],
+      "learnNext": ["Rust", "Chef", "Ansible", "Golang"],
       "blurb": {
         "heading": "",
         "text": "I'm a highly motivated self starter with an obsession for learning new things.\nI jumped from 8th grade into college full time (skipping high school altogether), but left before completing my degree to focus on developing and learning through my career.\nI started with programming in C++ and Linux systems administration, pivoted to networking, moved on to information security for ~7-8 years, and finally landed in DevOps. My passions right now are functional programming (Haskell, OCaml, ReasonML, and dare I say... JavaScript?), cloud, microservices through containerization/serverless/unikernels, continuous delivery by way of automation, and Everything-as-Code.\nI've accumulated a massive breadth of knowledge and experience across networking, information security (network security, application security, and system security), incident response, compliance, cloud, applications and systems architecture, etc..\nI've worked in network/security operations, management (led a team of 14), security architecture, sales (as a Solutions Architect), and led a DevOps team within an R&D organization. I'm at a startup currently, leading our effort to build a solid continuous delivery pipeline as a Site Reliability Engineer. My focus right now is on designing/building/scaling our cloud environment via microservices, continuous delivery pipeline, and developing a platform focused on machine learning. Occasionally, I also assist our professional services team as an SME in InfoSec and DevOps practices."
@@ -33,5 +171,5 @@
       }
     }
   },
-  "theme": ""
+  "theme": "dark"
 }
