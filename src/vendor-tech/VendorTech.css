@@ -1,4 +1,34 @@
 .vendor-tech {
   grid-area: vendor-tech;
   display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  /* max-height: calc(60vh);
+  overflow: scroll; */
+}
+
+.vendor-tech-title {
+  display: flex;
+}
+
+.vendor-tech-list {
+  display: flex;
+  padding: 0;
+}
+
+.vendor-name {
+  display: flex;
+  align-self: center;
+  flex: 1 0 auto;
+}
+
+.vendor-tech-list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.vendor-tech-list ul li {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }

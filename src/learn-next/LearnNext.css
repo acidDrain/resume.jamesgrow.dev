@@ -1,4 +1,22 @@
 .learn-next {
   grid-area: learn-next;
   display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+.learn-next-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.learn-next-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-next-list li {
+  list-style-type: none;
+  padding: 1rem;
 }

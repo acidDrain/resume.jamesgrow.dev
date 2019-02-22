@@ -1,15 +1,17 @@
 .App {
   display: grid;
   border-color: #f7f1f8;
-  min-height: 100vh;
+  min-height: 200vh;
+  /* min-height: calc(100%); */
   max-width: calc(100vw);
   /* padding: 0 10vw 0 10vw; */
   grid-template-columns: repeat(5, minmax(auto, 20vw));
-  /* grid-template-rows: 10vh repeat(6, minmax(auto, 20vh)); */
-  grid-template-rows: 10vh repeat(6, 1fr 2fr 1fr);
+  grid-template-rows: auto;
+  /* grid-template-rows: 1fr repeat(1, 1fr); */
+  /* grid-template-rows: fit-content(40%); */
+  grid-template-rows: 1fr repeat(auto-fill, 1fr) 1fr;
   grid-template-areas:
     "... header header header ... "
-    "... blurb blurb blurb ... "
     "... blurb blurb blurb ... "
     "... vendor-tech work-history side-projects ... "
     "... open-source work-history programming ... "

@@ -1,4 +1,35 @@
 .programming {
   grid-area: programming;
   display: flex;
+  flex-direction: column;
+  /* font-size: 0.9rem; */
+  /* max-height: calc(40vh);
+  overflow: scroll; */
+}
+
+.programming-title {
+  display: flex;
+  line-height: 2rem;
+}
+
+.programming-list {
+  display: flex;
+  padding: 0;
+}
+
+.programming-language {
+  display: flex;
+  align-self: center;
+  flex: 1 0 auto;
+}
+
+.programming-list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.programming-list ul li {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }

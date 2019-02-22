@@ -33,11 +33,11 @@ class App extends Component {
         <Header {...contactInfo} />
         <Blurb {...blurb} />
         <LearnNext learnNext={learnNext} />
-        <OpenSource {...openSource} />
-        <Programming {...programming} />
+        <OpenSource openSource={openSource} />
+        <Programming programming={programming} />
         <SideProjects {...sideProjects} />
-        <Systems {...systems} />
-        <VendorTech {...vendorTech} />
+        <Systems systems={systems} />
+        <VendorTech vendorTech={vendorTech} />
         <WorkHistory {...workHistory} />
       </div>
     );

@@ -1,7 +1,8 @@
 .blurb {
   grid-area: blurb;
   display: flex;
-  border: 1px solid white;
+  flex-direction: column;
+  /* border: 1px solid white; */
 }
 
 .blurb-heading {
@@ -11,4 +12,5 @@
 .blurb-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.35rem;
 }

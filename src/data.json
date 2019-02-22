@@ -24,7 +24,7 @@
           "products": ["Fortigate", "FortiManager", "FortiAnalayzer"]
         },
         { "vendor": "LogRhythm", "products": [""] },
-        { "vendor": "IBM", "products": ["QRadar"] },
+        { "vendor": "IBM", "products": ["QRadar", "Guardium"] },
         { "vendor": "F5", "products": ["LTM/GTM/ASM/APM/iRules"] },
         {
           "vendor": "Cisco",
@@ -47,7 +47,6 @@
           "products": ["SteelHead", "Interceptor", "CMC"]
         },
         { "vendor": "Imperva", "products": ["WAF", "DAM"] },
-        { "vendor": "IBM", "products": ["Guardium"] },
         { "vendor": "Qualys", "products": ["Vulnerability Management"] },
         {
           "vendor": "Tenable",
@@ -85,21 +84,21 @@
       "programming": [
         {
           "language": "javascript",
-          "component": ["node.js", "typescript", "react", "vanilla", "jest"]
+          "components": ["node.js", "typescript", "react", "vanilla js", "jest"]
         },
-        { "language": "bash", "component": [""] },
-        { "language": "python", "component": ["2.7", "3.5", "3.7"] },
-        { "language": "hcl", "component": ["terraform"] },
-        { "language": "ocaml", "component": ["lwt", "ReasonML"] }
+        { "language": "bash", "components": ["POSIX", "4.0+"] },
+        { "language": "python", "components": ["2.7", "3.5", "3.7"] },
+        { "language": "terraform", "components": ["hcl"] },
+        { "language": "ocaml", "components": ["ReasonML", "lwt", "async"] }
       ],
       "systems": [
         {
           "platform": "Linux",
           "components": [
-            "Debian Jessie|Stretch|Buster",
+            "Debian",
             "Ubuntu",
-            "CentOS X",
-            "RedHat Enterprise Linux X",
+            "CentOS",
+            "RedHat Enterprise Linux",
             "Gentoo"
           ]
         },
@@ -127,6 +126,10 @@
             "Compute Engine"
           ]
         },
+        {
+          "platform": "Kubernetes",
+          "components": ["(AWS via kops and GKE)"]
+        },
         { "platform": "GitHub", "components": ["*"] },
         { "platform": "GitLab", "components": ["*"] }
       ],
@@ -149,7 +152,7 @@
       "sideProjects": ["ReasonML/OCaml", "Lisp", "Haskell"],
       "learnNext": ["Rust", "Chef", "Ansible", "Golang"],
       "blurb": {
-        "heading": "",
+        "heading": "About Me",
         "text": "I'm a highly motivated self starter with an obsession for learning new things.\nI jumped from 8th grade into college full time (skipping high school altogether), but left before completing my degree to focus on developing and learning through my career.\nI started with programming in C++ and Linux systems administration, pivoted to networking, moved on to information security for ~7-8 years, and finally landed in DevOps. My passions right now are functional programming (Haskell, OCaml, ReasonML, and dare I say... JavaScript?), cloud, microservices through containerization/serverless/unikernels, continuous delivery by way of automation, and Everything-as-Code.\nI've accumulated a massive breadth of knowledge and experience across networking, information security (network security, application security, and system security), incident response, compliance, cloud, applications and systems architecture, etc..\nI've worked in network/security operations, management (led a team of 14), security architecture, sales (as a Solutions Architect), and led a DevOps team within an R&D organization. I'm at a startup currently, leading our effort to build a solid continuous delivery pipeline as a Site Reliability Engineer. My focus right now is on designing/building/scaling our cloud environment via microservices, continuous delivery pipeline, and developing a platform focused on machine learning. Occasionally, I also assist our professional services team as an SME in InfoSec and DevOps practices."
       },
       "contactInfo": {

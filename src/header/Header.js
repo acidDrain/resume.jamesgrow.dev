@@ -3,8 +3,12 @@ import "./Header.css";
 
 export default ({ name, email, title, github, linkedin, twitter }) => (
   <header className="header">
-    <div className="name">{name}</div>
-    <div className="header-title">{title}</div>
+    <div className="name">
+      <h1>{name}</h1>
+    </div>
+    <div className="header-title">
+      <h2>{title}</h2>
+    </div>
     <div className="header-contact">
       <div>
         E-mail: <button className="link-button">{email}</button>
