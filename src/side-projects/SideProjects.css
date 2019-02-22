@@ -1,4 +1,30 @@
 .side-projects {
   grid-area: side-projects;
   display: flex;
+  flex-direction: column;
+}
+
+.side-projects-title {
+  display: flex;
+}
+
+.side-projects-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.side-projects-list ul {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.side-projects-list li {
+  display: flex;
+  list-style-type: none;
+  line-height: 2rem;
+  justify-content: flex-start;
 }

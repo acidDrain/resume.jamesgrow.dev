@@ -1,20 +1,23 @@
 .App {
   display: grid;
-  border-color: #f7f1f8;
+  /* border-color: #f7f1f8; */
   min-height: 200vh;
   /* min-height: calc(100%); */
-  max-width: calc(100vw);
+  margin: auto;
+  max-width: calc(85vw);
   /* padding: 0 10vw 0 10vw; */
-  grid-template-columns: repeat(5, minmax(auto, 20vw));
-  grid-template-rows: auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(20vh, auto);
+  /* grid-template-rows: repeat(auto, 1fr); */
   /* grid-template-rows: 1fr repeat(1, 1fr); */
   /* grid-template-rows: fit-content(40%); */
-  grid-template-rows: 1fr repeat(auto-fill, 1fr) 1fr;
+  /* grid-template-rows: minmax(100px, max-content) repeat(, 20vw); */
+  /* grid-template-rows: 1fr repeat(auto-fill, 1fr) 1fr; */
   grid-template-areas:
-    "... header header header ... "
-    "... blurb blurb blurb ... "
-    "... vendor-tech work-history side-projects ... "
-    "... open-source work-history programming ... "
-    "... systems work-history learn-next ... ";
-  border: 1px solid;
+    " header header header header header header "
+    " blurb blurb blurb blurb blurb blurb "
+    " vendor-tech work-history work-history work-history work-history side-projects "
+    " open-source work-history work-history work-history work-history programming  "
+    " systems work-history work-history work-history work-history learn-next ";
+  /* border: 1px solid; */
 }

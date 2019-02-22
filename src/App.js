@@ -35,10 +35,10 @@ class App extends Component {
         <LearnNext learnNext={learnNext} />
         <OpenSource openSource={openSource} />
         <Programming programming={programming} />
-        <SideProjects {...sideProjects} />
+        <SideProjects sideProjects={sideProjects} />
         <Systems systems={systems} />
         <VendorTech vendorTech={vendorTech} />
-        <WorkHistory {...workHistory} />
+        <WorkHistory workHistory={workHistory} />
       </div>
     );
   }
