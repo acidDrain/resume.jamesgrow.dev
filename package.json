@@ -1,5 +1,5 @@
 {
-  "name": "grow.elasticplayground.com",
+  "name": "resume.jamesgrow.dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -108,8 +108,8 @@
       "node"
     ],
     "watchPlugins": [
-      "/home/jgrow/personal/grow.elasticplayground.com/node_modules/jest-watch-typeahead/filename.js",
-      "/home/jgrow/personal/grow.elasticplayground.com/node_modules/jest-watch-typeahead/testname.js"
+      "/home/jgrow/personal/resume.jamesgrow.dev.old/jest-watch-typeahead/filename.js",
+      "/home/jgrow/personal/resume.jamesgrow.dev.old/jest-watch-typeahead/testname.js"
     ]
   },
   "babel": {
