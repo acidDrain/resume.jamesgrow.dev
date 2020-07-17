@@ -25,3 +25,5 @@ yarn-error.log*
 .vscode_esy
 **/_esy
 _esy
+Session.vim
+tags
