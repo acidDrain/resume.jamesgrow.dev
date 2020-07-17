@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode_esy
+**/_esy
+_esy
