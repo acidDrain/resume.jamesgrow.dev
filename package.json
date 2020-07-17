@@ -108,8 +108,8 @@
       "node"
     ],
     "watchPlugins": [
-      "/home/jgrow/personal/resume.jamesgrow.dev.old/jest-watch-typeahead/filename.js",
-      "/home/jgrow/personal/resume.jamesgrow.dev.old/jest-watch-typeahead/testname.js"
+      "/home/jgrow/personal/resume.jamesgrow.dev/jest-watch-typeahead/filename.js",
+      "/home/jgrow/personal/resume.jamesgrow.dev/jest-watch-typeahead/testname.js"
     ]
   },
   "babel": {
