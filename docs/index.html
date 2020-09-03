@@ -2,8 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
 
     <style>
+      html {
+        box-sizing: border-box;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      *,
+      :after,
+      :before {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #333;
+        line-height: 1.25;
+        font-display: swap;
+        overflow-y: scroll;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+
+      a,
+      a:hover,
+      a:visited {
+        color: #f1f3f8;
+      }
+
+      .location_date {
+        padding: 0 0 1rem 0;
+      }
+
       /*
 
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
@@ -160,22 +202,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         height: 16px;
         content: " ";
         display: inline-block;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0
-    0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath
-    fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3
-    1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4
-    8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13
-    12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6
-    11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13
-    6z'%3E%3C/path%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
       }
       .markdown-body {
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
         line-height: 1.5;
         color: #24292e;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         font-size: 16px;
         line-height: 1.5;
         word-wrap: break-word;
@@ -289,6 +326,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       .markdown-body h4,
       .markdown-body h5,
       .markdown-body h6 {
+        font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 800;
         margin-top: 0;
         margin-bottom: 0;
       }
@@ -297,7 +339,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       }
       .markdown-body h1,
       .markdown-body h2 {
-        font-weight: 600;
+        font-weight: 800;
       }
       .markdown-body h2 {
         font-size: 24px;
@@ -663,7 +705,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       .markdown-body h6 {
         margin-top: 24px;
         margin-bottom: 16px;
-        font-weight: 600;
+        font-weight: 800;
         line-height: 1.25;
       }
       .markdown-body h1 {
@@ -951,9 +993,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <h2>Work History</h2>
       <h3>Fishtech Group</h3>
       <h4>Lead, DevOps Product Development</h4>
-      <pre><code class="hljs routeros">2020-06 - Present
-Kansas City, Missouri<span class="hljs-built_in"> Area
-</span></code></pre>
+
+      <div class="location_date">
+        2020-06 - Present
+        <br />
+        Kansas City, Missouri Area
+      </div>
+
       <p>
         I've made a transition from a leadership role into the top technical
         role in the organization. My responsibilities are:
@@ -980,9 +1026,11 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
         <li>lead the product development efforts</li>
       </ul>
       <h4>Director, DevOps and Security Automation</h4>
-      <pre><code class="hljs routeros">2019-06 - 2020-06
-Kansas City, Missouri<span class="hljs-built_in"> Area
-</span></code></pre>
+      <div class="location_date">
+        2019-06 - 2020-06
+        <br />
+        Kansas City, Missouri Area
+      </div>
       <p>Lead a new practice area for Fishtech consulting, including:</p>
       <ul>
         <li>bootstrapping the organization</li>
@@ -993,9 +1041,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
         <li>produce roadmap and vision</li>
       </ul>
       <h4>Solutions Architect</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2018</span><span class="hljs-number">-06</span> - Present
- Kansas City, MO
-</code></pre>
+
+      <div class="location_date">
+        2018-06 - Present
+        <br />
+        Kansas City, MO
+      </div>
+
       <ul>
         <li>
           Work with Account Managers throughout the selling process by
@@ -1018,9 +1070,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
         <li>Obtain and maintain vendor certifications</li>
       </ul>
       <h4>Site Reliability Engineer</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2017</span><span class="hljs-number">-07</span> - <span class="hljs-number">2018</span><span class="hljs-number">-06</span>
- Kansas City, MO
-</code></pre>
+
+      <div class="location_date">
+        2017-07 - 2018-06
+        <br />
+        Kansas City, MO
+      </div>
+
       <ul>
         <li>Automate everything</li>
         <li>
@@ -1040,9 +1096,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
       </ul>
       <h3>Optiv</h3>
       <h4>Managing Architect - MSS R&amp;D</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2016</span><span class="hljs-number">-07</span> - <span class="hljs-number">2017</span><span class="hljs-number">-07</span>
- Overland Park, KS
-</code></pre>
+
+      <div class="location_date">
+        2016-07 - 2017-07
+        <br />
+        Overland Park, KS
+      </div>
+
       <p>As Managing Architect in R&amp;D, my focus is</p>
       <ul>
         <li>
@@ -1069,9 +1129,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
         </li>
       </ul>
       <h4>Solutions Architect</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2015</span><span class="hljs-number">-05</span> - <span class="hljs-number">2016</span><span class="hljs-number">-07</span>
- San Francisco, CA
-</code></pre>
+
+      <div class="location_date">
+        2015-05 - 2016-07
+        <br />
+        San Francisco, CA
+      </div>
+
       <ul>
         <li>
           work with Account Managers throughout the selling process by
@@ -1095,9 +1159,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
       </ul>
       <h3>RiskIQ</h3>
       <h4>Security Architect</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2014</span><span class="hljs-number">-11</span> - <span class="hljs-number">2015</span><span class="hljs-number">-05</span>
- San Francisco, CA
-</code></pre>
+
+      <div class="location_date">
+        2014-11 - 2015-05
+        <br />
+        San Francisco, CA
+      </div>
+
       <ul>
         <li>
           scope and complete the implementation of RiskIQ solutions, at customer
@@ -1139,9 +1207,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
       </ul>
       <h3>FishNet Security</h3>
       <h4>Technical Account Manager</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2014</span><span class="hljs-number">-01</span> - <span class="hljs-number">2014</span><span class="hljs-number">-11</span>
- Kansas City, MO
-</code></pre>
+
+      <div class="location_date">
+        2014-01 - 2014-11
+        <br />
+        Kansas City, MO
+      </div>
+
       <p>
         As Technical Account Manager I work with targeted client accounts to:
       </p>
@@ -1218,9 +1290,13 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
         </li>
       </ul>
       <h4>Sr Managed Security Services Engineer</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2012</span><span class="hljs-number">-11</span> - <span class="hljs-number">2014</span><span class="hljs-number">-01</span>
- Kansas City, MO
-</code></pre>
+
+      <div class="location_date">
+        2012-11 - 2014-01
+        <br />
+        Kansas City, MO
+      </div>
+
       <p>Responsible for:</p>
       <ul>
         <li>
@@ -1253,19 +1329,20 @@ Kansas City, Missouri<span class="hljs-built_in"> Area
         </li>
       </ul>
       <h4>Escalation Engineer</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2011</span><span class="hljs-number">-07</span> - <span class="hljs-number">2012</span><span class="hljs-number">-11</span>
- Kansas City, MO
-</code></pre>
+
+      <div class="location_date">
+        2011-07 - 2012-11
+        <br />
+        Kansas City, MO
+      </div>
+
       <h4>Support Engineer</h4>
-      <pre><code class="hljs lsl"> <span class="hljs-number">2009</span><span class="hljs-number">-07</span> - <span class="hljs-number">2011</span><span class="hljs-number">-07</span>
- Kansas City, MO
-</code></pre>
+
+      <div class="location_date">
+        2009-07 - 2011-07
+        <br />
+        Kansas City, MO
+      </div>
     </article>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css"
-    />
   </body>
 </html>
