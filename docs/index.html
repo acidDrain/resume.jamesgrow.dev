@@ -43,6 +43,11 @@
       .location_date {
         padding: 0 0 1rem 0;
       }
+.project--highlight {
+        padding: 0 1em;
+        /*color: #6a737d;*/
+        border-left: 0.25em solid #dfe2e5;
+      }
 
       /*
 
@@ -1032,9 +1037,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </li>
         <li>lead the product development efforts</li>
       </ul>
-      <hr />
-      <div>
-        <h5>Project Highlight</h5>
+
+      <div class="project--highlight">
+        <h4>Project Highlight</h4>
         <p>
           Compliance automation solution using Open Policy Agent and
           Policy-As-Code (written in Rego) to check Terraform plans in the CI/CD
@@ -1055,13 +1060,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           resulting in an passing evaluation, the deployment would be authorized
           to continue.
         </p>
-        <h6>Background</h6>
+        <h5>Background</h5>
         <p>
           Government contractor with NIST 800-53/Fedramp requirements needing a
           solution to help ease the burden of compliance audit and controls for
           their cloud infrastructure.
         </p>
-        <h6>Requirements and Features</h6>
+        <h5>Requirements and Features</h5>
         <p>The solution should</p>
         <ul>
           <li>integate with the CI/CD pipeline</li>
@@ -1074,7 +1079,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             immediately
           </li>
         </ul>
-        <h6>Design</h6>
+        <h5>Design</h5>
         <ul>
           <li>
             First, we identified the technical controls from NIST 800-53
@@ -1122,9 +1127,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </ul>
       </div>
 
-      <hr />
-
-      <h3>Fishtech Group ❘ Director, DevOps and Security Automation ❘ 2019-06 - 2020-06</h3>
+<h3>Fishtech Group ❘ Director, DevOps and Security Automation ❘ 2019-06 - 2020-06</h3>
       <div class="location_date">
         Kansas City, Missouri Area
       </div>
@@ -1160,16 +1163,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </li>
       </ul>
 
-      <hr />
-
-      <div>
-        <h5>Project Highlight</h5>
+      <div class="project--highlight">
+        <h4>Project Highlight</h4>
 
         <p>
           Scanning-as-a-Service API written in JavaScript (Typescript) for
           creating vulnerability scanning jobs of AMIs (Amazon Machine Images).
         </p>
-        <h6>Background</h6>
+        <h5>Background</h5>
         <p>
           Client (health information technology services) adopted
           infrastructure-as-code early on, allowing development teams to produce
@@ -1189,7 +1190,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           the concept outlined in How to Set Up Continuous Golden AMI
           Vulnerability Assessments with Amazon Inspector
         </p>
-        <h6>Requirements and Features</h6>
+        <h5>Requirements and Features</h5>
         <ul>
           <li>
             The solution must be stateless: state should be tracked/stored
@@ -1214,7 +1215,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             connect to another API, etc.)
           </li>
         </ul>
-        <h6>Design</h6>
+        <h5>Design</h5>
         <p>
           The solution was built platform agnostic. AWS, GCP, Azure, VMware,
           etc. for the initial roadmap, with AWS being the initial cloud
@@ -1242,8 +1243,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </li>
         </ul>
       </div>
-
-      <hr />
 
       <h3>Fishtech Group ❘ Site Reliability Engineer ❘ 2017-07 - 2018-06</h3>
 
