@@ -11,13 +11,11 @@
         margin: 0;
         padding: 0;
       }
-
       *,
       :after,
       :before {
         box-sizing: inherit;
       }
-
       body {
         margin: 0;
         padding: 0;
@@ -59,20 +57,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         color: #333;
         background: #f8f8f8;
       }
-
       .hljs-comment,
       .hljs-quote {
         color: #998;
         font-style: italic;
       }
-
       .hljs-keyword,
       .hljs-selector-tag,
       .hljs-subst {
         color: #333;
         font-weight: bold;
       }
-
       .hljs-number,
       .hljs-literal,
       .hljs-variable,
@@ -80,72 +75,58 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       .hljs-tag .hljs-attr {
         color: #008080;
       }
-
       .hljs-string,
       .hljs-doctag {
         color: #d14;
       }
-
       .hljs-title,
       .hljs-section,
       .hljs-selector-id {
         color: #900;
         font-weight: bold;
       }
-
       .hljs-subst {
         font-weight: normal;
       }
-
       .hljs-type,
       .hljs-class .hljs-title {
         color: #458;
         font-weight: bold;
       }
-
       .hljs-tag,
       .hljs-name,
       .hljs-attribute {
         color: #000080;
         font-weight: normal;
       }
-
       .hljs-regexp,
       .hljs-link {
         color: #009926;
       }
-
       .hljs-symbol,
       .hljs-bullet {
         color: #990073;
       }
-
       .hljs-built_in,
       .hljs-builtin-name {
         color: #0086b3;
       }
-
       .hljs-meta {
         color: #999;
         font-weight: bold;
       }
-
       .hljs-deletion {
         background: #fdd;
       }
-
       .hljs-addition {
         background: #dfd;
       }
-
       .hljs-emphasis {
         font-style: italic;
       }
-
       .hljs-strong {
         font-weight: bold;
       }
-
       .markdown-body {
         min-width: 200px;
         max-width: 790px;
@@ -973,6 +954,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       }
     </style>
   </head>
+
   <body data-gr-c-s-loaded="true">
     <article class="markdown-body" id="markdown-preview">
       <h1>James M Grow</h1>
@@ -993,12 +975,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <h2>Work History</h2>
       <hr />
-      <h3>ScaleSec</h3>
-      <h4>Cloud Security Engineer</h4>
+      <h3>ScaleSec ❘ Cloud Security Engineer ❘ 2020-10 - Present</h3>
 
       <div class="location_date">
-        2020-10 - Present
-        <br />
         Remote
       </div>
 
@@ -1023,12 +1002,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </li>
       </ul>
 
-      <h3>Fishtech Group</h3>
-      <h4>Lead, DevOps Product Development</h4>
+      <h3>Fishtech Group ❘ Lead, DevOps Product Development ❘ 2020-06 - 2020-10</h3>
 
       <div class="location_date">
-        2020-06 - 2020-10
-        <br />
         Kansas City, Missouri Area
       </div>
 
@@ -1040,10 +1016,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         <li>
           software development, including:
           <ul>
-            <li>
-              JavaScript - both node.js and front-end, Rego (Open Policy Agent),
-              Python,
-            </li>
+            <li>JavaScript - both node.js (back-end) and front-end (React)</li>
+            <li>Rego (Open Policy Agent)</li>
+            <li>Python</li>
           </ul>
         </li>
         <li>build and maintain our cloud environments and CI/CD systems</li>
@@ -1057,10 +1032,100 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </li>
         <li>lead the product development efforts</li>
       </ul>
-      <h4>Director, DevOps and Security Automation</h4>
+      <hr />
+      <div>
+        <h5>Project Highlight</h5>
+        <p>
+          Compliance automation solution using Open Policy Agent and
+          Policy-As-Code (written in Rego) to check Terraform plans in the CI/CD
+          pipeline against NIST 800-53.
+        </p>
+        <p>
+          The solution provided a gatekeeper to the CI/CD piplene that failed
+          the build/prevented deployment when a Terraform plan was evaluated to
+          be out of compliance.
+        </p>
+        <p>
+          The solution also provided feedback to developers/engineers listing
+          the specific parts of the Terraform plan that were out of compliance
+          with references to the related NIST 800-53 controls.
+        </p>
+        <p>
+          If the findings were addressed and brought back into compliance,
+          resulting in an passing evaluation, the deployment would be authorized
+          to continue.
+        </p>
+        <h6>Background</h6>
+        <p>
+          Government contractor with NIST 800-53/Fedramp requirements needing a
+          solution to help ease the burden of compliance audit and controls for
+          their cloud infrastructure.
+        </p>
+        <h6>Requirements and Features</h6>
+        <p>The solution should</p>
+        <ul>
+          <li>integate with the CI/CD pipeline</li>
+          <li>integrate with Terraform</li>
+          <li>enable rich expression of policy</li>
+          <li>be platform agnostic</li>
+          <li>
+            provide fast and rich feedback to developers/engineers to enable
+            self-service - allowing engineers to identify and resolve findings
+            immediately
+          </li>
+        </ul>
+        <h6>Design</h6>
+        <ul>
+          <li>
+            First, we identified the technical controls from NIST 800-53
+            <ul>
+              <li>
+                Of those technical controls, we identified controls that were
+                applicable to the cloud deployment/environment (run time checks
+                were not in scope, for example)
+              </li>
+              <li>
+                finally we designed a tagging and classification strategy to
+                describe the systems, applications, environments, and data to
+                adequately model in the policy language
+              </li>
+            </ul>
+          </li>
+          <li>
+            Translated controls into policy code, modeling relationships in data
+            using the tagging and classification strategy we developed
+          </li>
+          <li>
+            Developed Terraform module examples that passed policy evaluation
+            and could be added to a library of reusable infrastructure
+            components.
+          </li>
+          <li>
+            Deployed the Open Policy Agent service running as a container in
+            Kubernetes
+          </li>
+          <li>
+            Developed CI scripts used to retrieve the Terraform plan from
+            Terraform Cloud and subsequently submit to the Open Policy Agent API
+            for evaluation
+          </li>
+        </ul>
+        <p>The underlying tech stack I used to build the solution:</p>
+
+        <ul>
+          <li>NIST 800-53 / Fedramp</li>
+          <li>Open Policy Agent / Rego</li>
+          <li>Kubernetes</li>
+          <li>Terraform</li>
+          <li>Microsoft Azure (cloud provider)</li>
+          <li>Python and Bash (CI integration scripts)</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h3>Fishtech Group ❘ Director, DevOps and Security Automation ❘ 2019-06 - 2020-06</h3>
       <div class="location_date">
-        2019-06 - 2020-06
-        <br />
         Kansas City, Missouri Area
       </div>
       <p>Lead a new practice area for Fishtech consulting, including:</p>
@@ -1072,11 +1137,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         <li>manage direct reports</li>
         <li>produce roadmap and vision</li>
       </ul>
-      <h4>Solutions Architect</h4>
+
+      <h3>Fishtech Group ❘ Solutions Architect ❘ 2018-06 - Present</h3>
 
       <div class="location_date">
-        2018-06 - Present
-        <br />
         Kansas City, MO
       </div>
 
@@ -1091,21 +1155,99 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           and create SOWs and RFPs
         </li>
         <li>
-          Coordinate follow-up sales activities (i.e. evaluation,
-          implementation, customer training)
+          Design, develop, and implement security automation solutions
+          (DevSecOps)
         </li>
-        <li>
-          Maintain relationships with clients by providing support, information,
-          and guidance as well as research and recommend new solutions and
-          services
-        </li>
-        <li>Obtain and maintain vendor certifications</li>
       </ul>
-      <h4>Site Reliability Engineer</h4>
+
+      <hr />
+
+      <div>
+        <h5>Project Highlight</h5>
+
+        <p>
+          Scanning-as-a-Service API written in JavaScript (Typescript) for
+          creating vulnerability scanning jobs of AMIs (Amazon Machine Images).
+        </p>
+        <h6>Background</h6>
+        <p>
+          Client (health information technology services) adopted
+          infrastructure-as-code early on, allowing development teams to produce
+          their own golden AMIs for their respective software stacks. Instead of
+          logging in to individual EC2 instances to make changes or run updates,
+          they would have their CI/CD Pipeline build a new golden AMI using
+          HashiCorp's Packer tool, then re-deploy their instances from the AMI.
+        </p>
+        <p>
+          The client was looking for a solution that could take webhooks from
+          their CI/CD pipeline to handle vulnerability scanning of each new AMI
+          produced while abstracting the underlying scanning solution behind the
+          API.
+        </p>
+        <p>
+          The goal was to produce a platform agnostic, custom implementation of
+          the concept outlined in How to Set Up Continuous Golden AMI
+          Vulnerability Assessments with Amazon Inspector
+        </p>
+        <h6>Requirements and Features</h6>
+        <ul>
+          <li>
+            The solution must be stateless: state should be tracked/stored
+            within components of the solution concerned with persistence
+          </li>
+          <li>The solution must scale horizontally</li>
+          <li>
+            The solution must be idempotent - adding more instances of the API
+            should not have any affect on overall operations
+          </li>
+          <li>
+            The solution must be asynchronous to avoid being a bottleneck or
+            blocker
+          </li>
+          <li>
+            The solution must be portable to support potential separate,
+            independent deployments
+          </li>
+          <li>
+            The solution must be event driven - it's actions are in response to
+            something happening (e.g. a new request to scan an AMI, a failure to
+            connect to another API, etc.)
+          </li>
+        </ul>
+        <h6>Design</h6>
+        <p>
+          The solution was built platform agnostic. AWS, GCP, Azure, VMware,
+          etc. for the initial roadmap, with AWS being the initial cloud
+          platform supported in MVP.
+        </p>
+
+        <p>
+          The underlying vulnerability scanning solution was Tenable.io, using a
+          Nessus scanner deployed locally to the VPC.
+        </p>
+
+        <p>The underlying tech stack I used to build the solution:</p>
+
+        <ul>
+          <li>
+            Written in Typescript (only external dependencies were Express.js
+            and AWS SDK)
+          </li>
+          <li>Containerized, deployed to Kubernetes running in EC2</li>
+          <li>RabbitMQ - for distributed messaging and queuing</li>
+          <li>CouchDB - job persistence and tracking</li>
+          <li>
+            ElasticSearch - data-lake / backend where results were stored
+            long-term
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h3>Fishtech Group ❘ Site Reliability Engineer ❘ 2017-07 - 2018-06</h3>
 
       <div class="location_date">
-        2017-07 - 2018-06
-        <br />
         Kansas City, MO
       </div>
 
@@ -1116,23 +1258,26 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </li>
         <li>Focus on AWS/GCP and serverless (lambda/functions)</li>
         <li>NodeJS, Go, Python, bash, and OCaml/ReasonML</li>
-        <li>
-          Spark, scikit-learn, caffe, Terraform, Packer, Consul, Docker, rkt,
-          and kubernetes
-        </li>
-        <li>Prometheus, ElasticSearch + Kibana, Grafana, Sematext</li>
-        <li>
-          GitHub, Jenkins, Spinnaker, CodeBuild/CodeDeploy. nginx, React /
-          Apollo -&gt; GraphQL
+        <li>Terraform</li>
+        <li>Packer</li>
+        <li>Consul</li>
+        <li>Docker</li>
+        <li>CoreOS</li>
+        <li>Kubernetes</li>
+        <li>Prometheus</li>
+        <li>ElasticSearch + Fluentd + Kibana</li>
+        <li>Grafana</li>
+        <li>GitHub</li>
+        <li>Gitlab</li>
+        <li>Jenkins</li>
+        <li>CodeBuild/CodeDeploy</li>
+        <li>NGINX</li>
+        <li>React / Apollo -&gt; GraphQL</li>
         </li>
       </ul>
       <hr />
-      <h3>Optiv</h3>
-      <h4>Managing Architect - MSS R&amp;D</h4>
-
+      <h3>Optiv ❘ Managing Architect, MSS R&amp;D ❘ 2016-07 - 2017-07</h3>
       <div class="location_date">
-        2016-07 - 2017-07
-        <br />
         Overland Park, KS
       </div>
 
@@ -1161,11 +1306,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           internal and external APIs, big data analytics, and machine learning
         </li>
       </ul>
-      <h4>Solutions Architect</h4>
+      <h3>Optiv ❘ Solutions Architect ❘ 2015-05 - 2016-07</h3>
 
       <div class="location_date">
-        2015-05 - 2016-07
-        <br />
         San Francisco, CA
       </div>
 
@@ -1191,12 +1334,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         <li>obtain and maintain top tier vendor certification</li>
       </ul>
       <hr />
-      <h3>RiskIQ</h3>
-      <h4>Security Architect</h4>
-
+      <h3>RiskIQ ❘ Security Architect ❘ 2014-11 - 2015-05</h3>
       <div class="location_date">
-        2014-11 - 2015-05
-        <br />
         San Francisco, CA
       </div>
 
@@ -1240,12 +1379,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </li>
       </ul>
       <hr />
-      <h3>FishNet Security</h3>
-      <h4>Technical Account Manager</h4>
 
+      <h3>FishNet Security ❘ Technical Account Manager ❘ 2014-01 - 2014-11</h3>
       <div class="location_date">
-        2014-01 - 2014-11
-        <br />
         Kansas City, MO
       </div>
 
@@ -1324,11 +1460,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           customer expectations
         </li>
       </ul>
-      <h4>Sr Managed Security Services Engineer</h4>
+      <h3>FishNet Security ❘ Sr Managed Security Services Engineer ❘ 2012-11 - 2014-01</h3>
 
       <div class="location_date">
-        2012-11 - 2014-01
-        <br />
         Kansas City, MO
       </div>
 
@@ -1363,19 +1497,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           configuration issues
         </li>
       </ul>
-      <h4>Escalation Engineer</h4>
+      <h3>FishNet Security ❘ Escalation Engineer ❘ 2011-07 - 2012-11</h3>
 
       <div class="location_date">
-        2011-07 - 2012-11
-        <br />
         Kansas City, MO
       </div>
 
-      <h4>Support Engineer</h4>
+      <h3>FishNet Security ❘ Support Engineer ❘ 2009-07 - 2011-07</h3>
 
       <div class="location_date">
-        2009-07 - 2011-07
-        <br />
         Kansas City, MO
       </div>
     </article>
