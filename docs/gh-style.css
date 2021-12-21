@@ -124,9 +124,9 @@ a:visited {
 }
 .markdown-body {
   min-width: 200px;
-  max-width: 790px;
-  margin: 0 auto;
-  padding: 30px;
+  /* max-width: calc(50vw); */
+  margin: 0 calc(30ch);
+  padding: 0;
 }
 .markdown-body .octicon {
   display: inline-block;
@@ -259,7 +259,7 @@ a:visited {
 }
 .markdown-body hr {
   height: 0;
-  margin: 15px 0;
+  margin: 1ch 0;
   overflow: hidden;
   background: transparent;
   border: 0;
@@ -658,7 +658,7 @@ a:visited {
 .markdown-body hr {
   height: 0.25em;
   padding: 0;
-  margin: 24px 0;
+  margin: 2ch 0;
   background-color: #e19f99;
   border: 0;
 }
