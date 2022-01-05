@@ -79,7 +79,21 @@ table {
 
 table td,
 table th {
-  padding: 6px 13px;
+  padding: 0.5rem;
   border: 1px solid #dfe2e5;
   color: #333;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact--header {
+  font-weight: 600;
+}
+
+.contact--header div, .contact--details div {
+  text-align: left;
+  padding: 0.25em;
 }
