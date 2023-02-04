@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.5a8bf7af.chunk.css",
-  "main.js": "/static/js/main.1b83cae7.chunk.js",
-  "main.js.map": "/static/js/main.1b83cae7.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.48c1f52f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.48c1f52f.js.map",
-  "static/js/2.478007af.chunk.js": "/static/js/2.478007af.chunk.js",
-  "static/js/2.478007af.chunk.js.map": "/static/js/2.478007af.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.ed5d88fa35c7db441fabfb7dee5de4dd.js": "/precache-manifest.ed5d88fa35c7db441fabfb7dee5de4dd.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.5a8bf7af.chunk.css.map": "/static/css/main.5a8bf7af.chunk.css.map",
-  "static/js/2.478007af.chunk.js.LICENSE.txt": "/static/js/2.478007af.chunk.js.LICENSE.txt"
+  "files": {
+    "main.js": "/static/js/main.55e23f2b.js",
+    "static/js/787.fd953450.chunk.js": "/static/js/787.fd953450.chunk.js",
+    "static/media/github-mark.svg": "/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "index.html": "/index.html",
+    "main.55e23f2b.js.map": "/static/js/main.55e23f2b.js.map",
+    "787.fd953450.chunk.js.map": "/static/js/787.fd953450.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.55e23f2b.js"
+  ]
 }
