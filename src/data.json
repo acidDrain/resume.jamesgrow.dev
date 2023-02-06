@@ -1,215 +1,152 @@
 {
-  "resume_data": {
-    "sections": {
-      "vendorTech": [
-        { "vendor": "Aqua Security", "products": ["Container Security"] },
-        { "vendor": "Twistlock", "products": ["Container Security"] },
-        { "vendor": "Check Point", "products": ["Firewalls/UTM", "Dome9"] },
+  "data": [
+    {
+      "company": "Firemon",
+      "positions": [
         {
-          "vendor": "Palo Alto Networks",
-          "products": [
-            "Firewalls",
-            "Panorama",
-            "Demisto",
-            "Evident.io",
-            "RedLock"
-          ]
-        },
-        {
-          "vendor": "Tenable",
-          "products": ["Tenable.io", "Nessus", "Security Center"]
-        },
-        {
-          "vendor": "Puppet",
-          "products": ["Puppet-Agent", "Puppet Server", "Puppet Enterprise"]
-        },
-        {
-          "vendor": "HashiCorp",
-          "products": ["Terraform", "Vault", "Vagrant", "Consul"]
-        },
-        { "vendor": "CloudBees", "products": ["Jenkins"] },
-        { "vendor": "Okta", "products": [""] },
-        { "vendor": "DataDog", "products": [""] }
-      ],
-      "workHistory": [
-        {
-          "company": "Fishtech Group",
-          "positions": [
-            {
-              "startDate": "1527861600000",
-              "endDate": "-1",
-              "title": "Solutions Architect",
-              "description": "",
-              "location": "Kansas City, MO"
-            },
-            {
-              "startDate": "1498917600000",
-              "endDate": "1527861600000",
-              "title": "Site Reliability Engineer",
-              "description": "Automate everything. Build quality, highly reliable, and scalable, cloud native services. Focus on AWS/GCP and serverless (lambda/functions). NodeJS, Go, Python, bash, and OCaml/ReasonML. Spark, scikit-learn, caffe, Terraform, Packer, Consul, Docker, rkt, and kubernetes. Prometheus, ElasticSearch + Kibana, Grafana, Sematext. GitHub, Jenkins, Spinnaker, CodeBuild/CodeDeploy. nginx, React / Apollo -> GraphQL",
-              "location": "Kansas City, MO"
-            }
-          ]
-        },
-        {
-          "company": "Optiv",
-          "positions": [
-            {
-              "startDate": "1467381600000",
-              "endDate": "1498917600000",
-              "title": "Managing Architect - MSS R&D",
-              "description": "As Managing Architect in R&D, my focus is on leading a DevOps team to build and maintain the automation of R&D's infrastructure. My focus is on building the automation and elasticity of our infrastructure, migration to cloud, and transition to micro-services to support cloud native application development.\nOur team manages the code build pipeline, container and system management, deployment, monitoring, testing, and everything else DevOps related. Our goal is to build security related applications as micro-services that can scale up and scale down as necessary in a cloud-native environment.\nThe outcome is that we save costs for the business, maintain maximum availability for our internal and external customers, and efficiently utilize resources with on-demand infrastructure to support our internal and external APIs, big data analytics, and machine learning.",
-              "location": "Overland Park, KS"
-            },
-            {
-              "startDate": "1430488800000",
-              "endDate": "1467381600000",
-              "title": "Solutions Architect",
-              "description": "Work with Account Managers throughout the selling process by participating in business development calls.\nAssist Account Managers in selling established contracts and developing relationships with prospects. Manage the proposal process and create SOW’s and RFP’s.\nCoordinate follow-up sales activities (i.e. evaluation, implementation, customer training).\nMaintain relationships with clients by providing support, information, and guidance as well as research and recommend new solutions and services.\nObtain and maintain top tier vendor certification.",
-              "location": "San Francisco, CA"
-            }
-          ]
-        },
-        {
-          "company": "RiskIQ",
-          "positions": [
-            {
-              "startDate": "1415631600000",
-              "endDate": "1430488800000",
-              "title": "Security Architect",
-              "description": "Scope and complete the implementation of RiskIQ solutions, at customer sites and remotely.\nMeet with customers, gather both product and integration requirements, and be able to demonstrate and explain the various aspects of the RiskIQ solutions.\nArchitect customer workflows, processes, and documentation. Interact with customers in a collaborative, consultative manner to deliver results, provide feedback and make recommendations.\nIndependently decompose and solve complex client problems with very little direction. Leverage the RiskIQ tool to deliver intelligence reports on emerging threats.\nDeliver world-class “white glove” customer enablement and customer support.\nArchitect and implement integrations of the RiskIQ solutions at the client site – e.g. integrate with SIEM or GRC tools, customer dashboards, and next-generation intelligence tools (e.g. Palantir). Develop add-ons to the RiskIQ APIs to solve customer needs. Research emerging security topics and new attack vectors, in both the web and mobile spaces.\nPublish and present your work to RiskIQ subscribers, and to the world at large",
-              "location": "San Francisco, CA"
-            }
-          ]
-        },
-        {
-          "company": "FishNet Security",
-          "positions": [
-            {
-              "startDate": "1388588400000",
-              "endDate": "1415372400000",
-              "title": "Technical Account Manager",
-              "description": "As Technical Account Manager I work with targeted client accounts. I aggressively own and drive projects from inception to completion, identify and document project requirements, support clients on various information security initiatives, keep all stakeholders apprised of project and budget status, and manage issues to resolution. I am also responsible for assembling project teams, assigning individual responsibilities, identifying appropriate resources needed, and developing schedule to ensure timely completion of project and issues.\nSome of my responsibilities include:\nIndependently lead projects from inception to completion.\nBuild and develop relationships with internal and external stakeholders.\nEnsure alignment between demand and capacity.\nEffectively delegate and ensure timely completion of all open tickets with client Lead information security projects from inception to completion.\nIdentify and assess project risk.\nBuild appropriate mitigation plans into the overall project initiatives.\nDevelop a project plan detailing schedules, controls, resources, costs and daily tasks.\nAssure overall project and service offering quality and consistency.\nValidate, manage and control the scope of the offering and of the project.\nMeet regularly with team to aid in identifying issues and strategies.\nActively monitor project budget, deliverables and open tickets.\nConsolidate and report project performance and metrics.\nCoordinate and manage projects across various functional groups, communicating impacts.\nEstablish communication plans to facilitate core project team coordination and to provide status to management and extended project team members.\nEffectively negotiate with customers, stakeholders, coworkers and 3rd parties.\nManage projects to quality and profitability standards.\nImplement project management controls to ensure projects are delivered on time, within budget, adhere to high quality standards and meet customer expectations",
-              "location": "Kansas City, MO"
-            },
-            {
-              "startDate": "1351778400000",
-              "endDate": "1388588400000",
-              "title": "Sr Managed Security Services Engineer",
-              "description": "Responsible for leading the integration and implementation of security devices and products that enable delivery of managed security services into a variety of simple to complex network environments. Manage all aspects of the integration process for Managed Security Services; including network and security design review and recommendations, technical data gathering, security and policy review and configuration, troubleshooting, coordination of equipment and system staging, configuration, installation, and activation of services for delivery by the Security Operations Center.\nIn-depth knowledge of TCP/IP networking and routing communication protocols, as well as hands on experience and in-depth knowledge, understanding and a strong competency in best-of-breed Firewall and IDS/IPS security products (CheckPoint, Cisco, Juniper, SourceFire, Palo Alto). Review and provide consulting to customers on their security and architectural design.\nResponsible for multi-vendor/multi-device/platform implementations with geographically dispersed customers, partners and/or other service providers. Lead troubleshooting efforts for complex network environments to identify and eliminate network or security configuration issues.",
-              "location": "Kansas City, MO"
-            },
-            {
-              "startDate": "1311170400000",
-              "endDate": "1351778400000",
-              "title": "Escalation Engineer",
-              "description": "",
-              "location": "Kansas City, MO"
-            },
-            {
-              "startDate": "1248098400000",
-              "endDate": "1311170400000",
-              "title": "Support Engineer",
-              "description": "",
-              "location": "Kansas City, MO"
-            }
-          ]
+          "startDate": 1646114400000,
+          "endDate": 1669788000000,
+          "title": "Sr. Product Manager",
+          "summary": "As Sr. Product Manager, I steer the direction of our cloud security solutions through feedback from our clients and prospects and insight from my experience in the cloud security space.\nI also assist with architecture and engineering for a cloud-native migration of our existing on-prem products, which we intend to provide as a service in the future.",
+          "description": "Meet with clients and obtain feedback.\nArticulate client feedback to developers.\nDevelop proof-of-concept/prototype of solutions based on client feedback.\nDemo/share/discuss prototype/proof-of-concept with the development team and handoff to develop into a production version.",
+          "skillsTech": ["typescript", "javascript", "deno", "nodejs", "aws", "serverless", "azure", "kubernetes", "graphql", "linux", "python", "react", "elasticsearch", "kibana", "opensearch", "docker", "github","terraform"],
+          "location": "Remote, United States"
         }
-      ],
-      "keySkills": {},
-      "interestingProjects": {},
-      "programming": [
+      ]
+    },
+    {
+      "company": "Veterans United",
+      "positions": [
         {
-          "language": "javascript",
-          "components": ["node.js", "typescript", "react", "vanilla js", "jest"]
-        },
-        { "language": "bash", "components": ["POSIX", "4.0+"] },
-        { "language": "python", "components": ["2.7", "3.5", "3.7"] },
-        { "language": "terraform", "components": ["hcl"] },
-        { "language": "ocaml", "components": ["ReasonML", "lwt", "async"] }
-      ],
-      "systems": [
-        {
-          "platform": "Linux",
-          "components": [
-            "Debian",
-            "Ubuntu",
-            "CentOS",
-            "RedHat Enterprise Linux",
-            "Gentoo"
-          ]
-        },
-        {
-          "platform": "Amazon Web Services",
-          "components": ["*"]
-        },
-        {
-          "platform": "Microsoft Azure",
-          "components": [
-            "VM",
-            "Azure Active Directory",
-            "Functions",
-            "App Services",
-            "Resource Manager Templates"
-          ]
-        },
-        {
-          "platform": "Google Cloud Platform",
-          "components": [
-            "GKE",
-            "App Engine",
-            "Bigtable",
-            "Functions",
-            "Compute Engine"
-          ]
-        },
-        {
-          "platform": "Kubernetes",
-          "components": ["(AWS via kops and GKE)"]
-        },
-        { "platform": "GitHub", "components": ["*"] },
-        { "platform": "GitLab", "components": ["*"] }
-      ],
-      "openSource": [
-        { "projectName": "Kafka" },
-        { "projectName": "Docker" },
-        { "projectName": "rkt" },
-        { "projectName": "nginx" },
-        { "projectName": "apache" },
-        { "projectName": "Kubernetes" },
-        { "projectName": "Istio" },
-        { "projectName": "Envoy" },
-        { "projectName": "ConcourseCI" },
-        { "projectName": "ElasticSearch" },
-        { "projectName": "Logstash" },
-        { "projectName": "Kibana" },
-        { "projectName": "Filebeat" },
-        { "projectName": "fluentd" }
-      ],
-      "sideProjects": ["ReasonML/OCaml", "Lisp", "Haskell"],
-      "learnNext": ["Rust", "Chef", "Ansible", "Golang", "NixOS"],
-      "blurb": {
-        "heading": "About Me",
-        "text": "I'm a highly motivated self starter with an obsession for learning new things.\nI jumped from 8th grade into college full time (skipping high school altogether), but left before completing my degree to focus on developing and learning through my career.\nI started with programming in C++ and Linux systems administration, pivoted to networking, moved on to information security for ~7-8 years, and finally landed in DevOps. My passions right now are functional programming (Haskell, OCaml, ReasonML, and dare I say... JavaScript?), cloud, microservices through containerization/serverless/unikernels, continuous delivery by way of automation, and Everything-as-Code.\nI've accumulated a massive breadth of knowledge and experience across networking, information security (network security, application security, and system security), incident response, compliance, cloud, applications and systems architecture, etc..\nI've worked in network/security operations, management (led a team of 14), security architecture, sales (as a Solutions Architect), and led a DevOps team within an R&D organization. I'm at a startup currently, leading our effort to build a solid continuous delivery pipeline as a Site Reliability Engineer. My focus right now is on designing/building/scaling our cloud environment via microservices, continuous delivery pipeline, and developing a platform focused on machine learning. Occasionally, I also assist our professional services team as an SME in InfoSec and DevOps practices."
-      },
-      "contactInfo": {
-        "name": "James Grow",
-        "title": "Solutions Architect",
-        "email": "jmgrow@gmail.com",
-        "twitter": {
-          "name": "@jamesmgrow",
-          "href": "https://twitter.com/jamesmgrow"
-        },
-        "linkedin": {
-          "name": "jamesmgrow",
-          "href": "https://www.linkedin.com/in/jamesmgrow/"
-        },
-        "github": {
-          "href": "https://github.com/acidDrain",
-          "name": "acidDrain"
+          "startDate": 1612159200000,
+          "endDate": 1646200800000,
+          "title": "Cloud Application Security Architect",
+          "summary": "As Cloud Application Security Architect, I serve as a technical leader in designing and developing secure software, ensuring we build applications using industry standards for modern Cloud systems, and establishing strategy, policies, procedures, and best practice security methodology.",
+          "description": "Inventory and understand existing, internally developed applications and systems.\nDevelop cloud-native architectures that will support those applications and systems, or, where necessary, work with development teams to articulate technical gaps or barriers to cloud migration.\nAssist with architecture and engineering for our on-premises Kubernetes platform.\nWork with security vendors to assess and refine our security capabilities and controls for our cloud environments and Kubernetes platform.",
+          "skillsTech": ["angular","javascript","C#",".NET","ASP.NET","kubernetes","docker","gitlab","aws","azure","envoy","istio","opa","rego","terraform","linux"],
+          "location": "Remote, United States"
         }
-      }
+      ]
+    },
+    {
+      "company": "Fishtech Group",
+      "positions": [
+        {
+          "startDate": 1559365200000,
+          "endDate": 1614664800000,
+          "title": "Director, DevOps and Security Automation",
+          "summary": "As Director of DevOps and Security Automation, I lead a team that builds custom solutions for cloud security and automation.",
+          "description": "My team meets with clients and prospects to understand technical security or automation challenges.\nWe articulate the technical challenge and obtain client feedback, validating and synchronizing the problem between our teams.\nWe develop and propose a solution and obtain client feedback to revise (if necessary).\nIf the client moves forward with the proposal, we begin development and testing, provide the solution to the client, and implement the solution (if part of the agreement).",
+          "skillsTech": ["github","gitlab","aws","azure","gcp","python","typescript","javascript","react","graphql","express.js","nodejs","phantom","demisto","lambda","apollo","cloudevents","rabbitmq","sqs","kafka","kinesis","kinesis firehose","open policy agent","opa","rego","envoy","nginx","istio","tenable","rapid7","terraform","linux"],
+          "location": "Kansas City, MO"
+        },
+        {
+          "startDate": 1527829200000,
+          "endDate": 1561870800000,
+          "title": "Solutions Architect",
+          "summary": "As Solutions Architect, I attend client-facing meetings with our sales team, develop proposals, and perform implementation/support for custom cloud or security automation solutions.",
+          "description": "Listen to the client to understand technical, procedural, or staffing challenges.\nWhiteboard to illustrate technical or procedural challenges and facilitate understanding across technical and non-technical meeting participants.\nIf the topic is technical, explore/develop initial solutions, which I develop further into a formal proposal.\nWrite Statements of Work (SoWs) to develop/implement/support solutions.\nImplement custom solutions as defined in SoW.\nProvide support for the solutions after implementation",
+          "skillsTech": ["python","nodejs","javascript","docker","kubernetes","aws","azure","gcp","demisto","phantom","prisma cloud","palo alto","terraform","linux"],
+          "location": "Kansas City, MO"
+        },
+        {
+          "startDate": 1498885200000,
+          "endDate": 1530334800000,
+          "title": "Site Reliability Engineer",
+          "summary": "As Site Reliability Engineer, I am responsible for building and operating our greenfield Security-as-a-Service platform using AWS and Kubernetes.\nI am also responsible for this platform's scalability, observability.",
+          "description": "Automate everything.\nBuild quality, highly reliable, and scalable, cloud native services.\nFocus on AWS/GCP, serverless (lambda/functions), and Kubernetes.",
+          "skillsTech": ["nodejs", "go", "python", "bash", "ocaml","reasonml", "spark", "scikit-learn", "caffe", "terraform", "packer", "consul", "docker", "kubernetes", "prometheus", "elasticsearch", "kibana", "grafana", "github", "jenkins", "spinnaker", "nginx", "react", "apollo", "graphql", "aws", "gcp", "javascript", "vault", "gitlab","linux"],
+          "location": "Kansas City, MO"
+        }
+      ]
+    },
+    {
+      "company": "Optiv Security",
+      "positions": [
+        {
+          "startDate": 1467349200000,
+          "endDate": 1501390800000,
+          "title": "Managing Architect - MSS R&D",
+          "summary": "As Managing Architect in R&D, I lead a DevOps team that builds and maintains the automation of R&D's infrastructure.\nOur team focuses on building automation and scalability into our infrastructure, migrating our existing services to cloud, and re-architect our monolithic services into micro-services to support cloud-native environments.",
+          "description": "Our team manages the code build pipeline, container and system management, deployment, monitoring, testing, and everything else DevOps related. We aim to build security-related applications as micro-services that can scale up and down as necessary in a cloud-native environment.\nThe outcome is that we save costs for the business, maintain maximum availability for our internal and external customers, and efficiently utilize resources with on-demand infrastructure to support our internal and external APIs, big data analytics, and machine learning.",
+          "skillsTech": ["vmware","aws","kubernetes","docker","javascript","typescript","python","terraform","puppet","packer","nodejs","react","express.js","linux","vagrant","active directory","bitbucket","jenkins","ruby","elixir"],
+          "location": "Overland Park, KS"
+        },
+        {
+          "startDate": 1430456400000,
+          "endDate": 1469854800000,
+          "title": "Solutions Architect",
+          "summary": "As Solutions Architect, I work with our pre-sales team to identify, qualify, and scope projects for our clients.",
+          "description": "Work with Account Managers throughout the selling process by participating in business development calls.\nAssist Account Managers in selling established contracts and developing relationships with prospects. Manage the proposal process and create SOW's and RFP's.\nCoordinate follow-up sales activities (i.e. evaluation, implementation, customer training).\nMaintain relationships with clients by providing support, information, and guidance as well as research and recommend new solutions and services.\nObtain and maintain top tier vendor certification.",
+          "skillsTech": ["check point","palo alto","splunk","juniper","riverbed","qradar","arcsight","bluecoat","symantec","exabeam","veracode","checkmarx","white hat","phantom cyber","aruba","f5","cisco","fortinet","linux"],
+          "location": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "company": "RiskIQ",
+      "positions": [
+        {
+          "startDate": 1414818000000,
+          "endDate": 1432962000000,
+          "title": "Security Architect",
+          "summary": "As Security Architect, I work in a \"Customer Success\" capacity to ensure our product/service delivers the value our clients expect.",
+          "description": "Scope and complete the implementation of RiskIQ solutions, at customer sites and remotely.\nMeet with customers, gather both product and integration requirements, and be able to demonstrate and explain the various aspects of the RiskIQ solutions.\nArchitect customer workflows, processes, and documentation. Interact with customers in a collaborative, consultative manner to deliver results, provide feedback, and make recommendations.\nIndependently decompose and solve complex client problems with minimal direction. Leverage the RiskIQ tool to deliver intelligence reports on emerging threats.\nDeliver world-class \"white glove\" customer enablement and customer support.\nArchitect and implement integrations of the RiskIQ solutions at the client site – e.g., integrate with SIEM or GRC tools, customer dashboards, and next-generation intelligence tools (e.g., Palantir). Develop add-ons to the RiskIQ APIs to solve customer needs. Research emerging security topics and new attack vectors in both the web and mobile spaces.\nPublish and present my work to RiskIQ subscribers and the world.",
+          "skillsTech": ["python","javascript","bash","linux"],
+          "location": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "company": "FishNet Security",
+      "positions": [
+        {
+          "startDate": 1388556000000,
+          "endDate": 1417327200000,
+          "title": "Technical Account Manager",
+          "summary": "As Technical Account Manager, I work with targeted client accounts.\nI own and drive projects from inception to completion, identify and document project requirements, support clients on various information security initiatives, keep all stakeholders apprised of project and budget status, and manage issues to resolution.\nI am also responsible for assembling project teams, assigning individual responsibilities, identifying appropriate resources needed, and developing a schedule to ensure the timely completion of projects and issues.\nSome of my responsibilities include the following:",
+          "description": "Independently lead projects from inception to completion.\nBuild and develop relationships with internal and external stakeholders.\nEnsure alignment between demand and capacity.\nEffectively delegate and ensure the timely completion of all open tickets with the client.\nLead information security projects from inception to completion.\nBuild appropriate mitigation plans for the overall project initiatives.\nDevelop a project plan detailing schedules, controls, resources, costs, and daily tasks.\nAssure overall project and service offering quality and consistency.\nValidate, manage, and control the scope of the offering and the project.\nMeet regularly with the team to aid in identifying issues and strategies.\nActively monitor project budget, deliverables, and open tickets.\nCoordinate and manage projects across various functional groups, communicating impacts.\nEstablish communication plans to facilitate core project team coordination and to provide status to management and extended project team members.\nManage projects to quality and profitability standards.\nImplement project management controls to ensure projects are delivered on time, within budget, adhere to high-quality standards, and meet customer expectations.",
+          "skillsTech": ["check point","palo alto","bluecoat","f5","cisco","qradar","splunk","logrhythm","juniper","sourcefire","symantec","venafi","brightmail","sophos","fortinet","arcsight","squid","encase","linux"],
+          "location": "Kansas City, MO"
+        },
+        {
+          "startDate": 1351746000000,
+          "endDate": 1391061600000,
+          "title": "Sr. Managed Security Services Engineer",
+          "summary": "As Sr. Managed Security Services Engineer, I oversee day-to-day operations for our clients' security infrastructure.",
+          "description": "Responsible for leading the integration and implementation of security devices and products that enable the delivery of managed security services into a variety of simple to complex network environments. Manage all aspects of the integration process for Managed Security Services; including network and security design review and recommendations, technical data gathering, security and policy review and configuration, troubleshooting, coordination of equipment and system staging, configuration, installation, and activation of services for delivery by the Security Operations Center.\nUtilize in-depth knowledge of TCP/IP networking and routing communication protocols, as well as hands-on experience and in-depth knowledge, understanding, and a strong competency in best-of-breed Firewall and IDS/IPS security products (CheckPoint, Cisco, Juniper, SourceFire, Palo Alto). Review and provide consulting to customers on their security and architectural design.\nResponsible for multi-vendor/multi-device/platform implementations with geographically dispersed customers, partners, and other service providers. Lead troubleshooting efforts for complex network environments to identify and eliminate network or security configuration issues.",
+          "skillsTech": ["check point","palo alto","bluecoat","f5","cisco","qradar","splunk","logrhythm","juniper","linux"],
+          "location": "Kansas City, MO"
+        },
+        {
+          "startDate": 1335848400000,
+          "endDate": 1354255200000,
+          "title": "Network Security Consultant",
+          "summary": "As Network Security Consultant, I implement/integrate security solutions for our consulting services practice.",
+          "description": "Provide on-site implementation and consulting services for the security products/services that FNS represents, including, but not limited to Check Point, Juniper, Secure Computing, F5, McAfee, Blue Coat, and others.\nProvide leadership by aiding in product research, following up on open issues, and acting as an escalation of contact.\nAssist Team Leader with day-to-day issues as they relate to Engineering engagements.\nCommunicate critical client issues to management and escalation engineering staff.\nProvide weekly reports of Engineering activity as defined by management.\nAssist other Engineering or Support Center staff with lab systems configurations to replicate client issues.\nAssist in the creation of client systems profiles and statements of work.\nAct as front-line point of escalation on assigned client engagements.\nMaintain technical knowledge and troubleshooting skills on the FNS supported products and services.\nDispatch to customer sites to assist and/or facilitate repair or installation of supported products.",
+          "skillsTech": ["check point","palo alto","bluecoat","f5","cisco","qradar","splunk","logrhythm","juniper","fortinet","linux"],
+          "location": "Kansas City, MO"
+        },
+        {
+          "startDate": 1293861600000,
+          "endDate": 1354255200000,
+          "title": "Escalation Engineer",
+          "summary": "As Escalation Engineer, I provide advanced support in L2/L3, system down, and other escalation scenarios.",
+          "description": "De-escalate/defuse when necessary.\nDebug network and applications to determine root cause.\nImplement workarounds (where necessary).\nApply custom patches/fixes (where necessary).\nOwn problem from initial incident through successful fix/solution.\nManage calls between client and vendor (where necessary).",
+          "skillsTech": ["check point","palo alto","bluecoat","f5","cisco","qradar","splunk","logrhythm","juniper","fortinet","linux"],
+          "location": "Kansas City, MO"
+        },
+        {
+          "startDate": 1246424400000,
+          "endDate": 1312002000000,
+          "title": "Support Engineer",
+          "summary": "As Support Engineer, I answer inbound support requests (email and phone calls) for products which we provide authorized support.",
+          "description": "",
+          "skillsTech": ["check point","palo alto","bluecoat","f5","cisco","qradar","splunk","logrhythm","juniper","fortinet","linux"],
+          "location": "Kansas City, MO"
+        }
+      ]
     }
-  },
-  "theme": "dark"
+  ]
 }
+
