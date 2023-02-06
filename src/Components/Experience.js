@@ -246,7 +246,7 @@ const Row = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  @media screen and (max-width:50rem) {
+  @media screen and (max-width:800px) {
     font-size: 0.85rem;
   }
   @media print {
