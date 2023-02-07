@@ -2,7 +2,7 @@ const getThemeColors = ({ colors }) => ({
   ...colors,
 });
 
-const getThemeColor = ({ theme }, accent) => getThemeColors(theme)[accent];
+const getThemeColor = ({ colors }) => ((accent) => (getThemeColors({ colors }))[accent]);
 
 /* Date Formatting Helpers */
 const toDays = (end, start) => Math.floor((end-start)/(86400*1000.0));

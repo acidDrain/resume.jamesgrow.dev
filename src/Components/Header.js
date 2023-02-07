@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { getThemeColor } from "../util";
 
 const StyledHeader = styled.header`
   text-align: center;
   display: flex;
   max-width: calc(100%);
   border: thin solid;
-  background-color: ${(props) => props.theme.colors.bg2};
+  background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
   @media screen and (min-width: 1rem) and (max-width: 50rem) {
     padding: 0.35em 1.0em;
   }

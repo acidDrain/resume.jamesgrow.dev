@@ -62,8 +62,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    color: ${(props) => getThemeColor(props.theme, "fg01")};
-    background-color: ${(props) => getThemeColor(props.theme, "bg01")};
+    color: ${(props) => getThemeColor(props.theme)("fg")};
+    background-color: ${(props) => getThemeColor(props.theme)("bg")};
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
     transition: all 0.3s linear;
 
@@ -76,14 +76,13 @@ const GlobalStyle = createGlobalStyle`
 
 const themeOptions = ["dark", "light"];
 
-function App(props) {
+function App() {
   const defaultColorScheme = window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
 
   const [currentTheme, setTheme] = useState(defaultColorScheme);
-  console.dir(JSON.stringify(themes.dark));
 
   const themeToggle = (e) => {
     e.preventDefault();
@@ -92,7 +91,7 @@ function App(props) {
   };
 
   return (
-    <ThemeProvider theme={themes[currentTheme].colors}>
+    <ThemeProvider theme={themes[currentTheme]}>
       <GlobalStyle />
       <AppWrapper>
         <Header>

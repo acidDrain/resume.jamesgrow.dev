@@ -25,7 +25,7 @@ const ExperienceWrapper = styled.article`
 
 const H2 = styled.h2`
   display: flex;
-  color: ${({ theme }) => getThemeColor(theme, "orange")};
+  color: ${({ theme }) => getThemeColor(theme)("orange")};
   font-size: 2.0rem;
   @media print {
     color: black;
@@ -34,19 +34,19 @@ const H2 = styled.h2`
     page-break-after: avoid;
   }
   &::after {
-      content: " ";
-      width: calc(100%);
-      height: 0.80rem;
+    content: " ";
+    width: calc(100%);
+    height: 0.80rem;
     align-self: center;
-      border-bottom: thin solid ${({ theme }) => getThemeColor(theme, "purple")};
-      border-left: none;
-      margin-left: 0.20rem;
+    border-bottom: thin solid ${({ theme }) => getThemeColor(theme)("purple")};
+    border-left: none;
+    margin-left: 0.20rem;
     }
 `;
 
 const H3 = styled.h3`
   display: flex;
-  color: ${({ theme }) => getThemeColor(theme, "orange")};
+  color: ${({ theme }) => getThemeColor(theme)("orange")};
   margin: auto;
   padding: 0rem 0.0rem 0.75rem 0rem;
   flex: 0 1 auto;
@@ -73,7 +73,7 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   display: flex;
-  color: ${({ theme }) => getThemeColor(theme, "fg2")};
+  color: ${({ theme }) => getThemeColor(theme)("fg")};
   margin: auto 0em;
   flex: 0 1 auto;
   &::after {
@@ -124,9 +124,9 @@ const StyledHistoryRecord = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: ${({ theme }) => getThemeColor(theme, "bg")};
-  color: ${({ theme }) => getThemeColor(theme, "fg")};
-  border: ${(props) => `1px solid ${getThemeColor(props.theme, "fg").replace(/1\.0/, "0.5")}`};
+  background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
+  color: ${({ theme }) => getThemeColor(theme)("fg4")};
+  border: ${(props) => `1px solid ${getThemeColor(props.theme)("orange").replace(/1\.0/, "0.5")}`};
   padding: 1.75rem;
   @media print {
     page-break-inside: avoid;
@@ -145,7 +145,7 @@ const SkillsAndTech = styled.div`
     display: flex;
     flex: 0 2 auto;
     text-align: left;
-    color: ${({ theme }) => getThemeColor(theme, "fg2")};
+    color: ${({ theme }) => getThemeColor(theme)("fg2")};
     @media screen and (max-width: 800px) {
       font-size: 0.9em;
     }
@@ -158,7 +158,7 @@ const SkillsAndTech = styled.div`
     flex: 2 2 auto;
     align-items: center;
     padding-left: 0.75em;
-    color: ${({ theme }) => getThemeColor(theme, "fg3")};
+    color: ${({ theme }) => getThemeColor(theme)("fg3")};
     @media screen and (min-width: 160px) and (max-width: 800px) {
       font-size: 0.6em;
     }
@@ -235,7 +235,7 @@ const StyledTimelineBullet = styled.div`
     border-radius: 0.5rem;
     height: 0.5rem;
     width: 0.5rem;
-    background-color: ${({ theme }) => getThemeColor(theme, "b2")};
+    background-color: ${({ theme }) => getThemeColor(theme)("fg4")};
   }
   @media screen and (max-width: 800px) {
     margin-top: 2.4em;
@@ -344,7 +344,7 @@ const FlexTitle = styled(H4)`
 `;
 
 const FlexDuration = styled(FlexItem)`
-  color: ${({ theme }) => getThemeColor(theme, "fg")};
+  color: ${({ theme }) => getThemeColor(theme)("fg")};
   @media screen and (max-width: 800px) {
     flex: 0 2 auto;
     justify-content: flex-start;
@@ -482,7 +482,7 @@ const Experience = ({ experience, ...props }) => {
               ) => (
                   <HistoryRowWrapper
                     indent={positions.length > 1 && "1rem"}
-                    borders={ShouldDisplayBorder(index, positions.length, getThemeColor(props.theme, "orange").replace(/1\.0/, '0.5'))}
+                    borders={ShouldDisplayBorder(index, positions.length, getThemeColor(props.theme)("orange").replace(/1\.0/, '0.5'))}
                     key={`${endDate}-${startDate}`}
                   >
                     {positions.length < 2 ?
