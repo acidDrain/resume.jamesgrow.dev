@@ -3,12 +3,12 @@ import GithubLogo from "./assets/github-mark.svg";
 import GithubLogoWhite from "./assets/github-mark-white.svg";
 import LinkedInLogo from "./assets/LinkedIn-Logo.png";
 import { Link, Button } from "./Components";
-import { getThemeBg, getThemeBg2, getThemeLink } from "./util";
+import { getThemeColor } from "./util";
 
 const ContactCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${getThemeBg2};
+  background-color: ${props => getThemeColor(props.theme, "bg01")};
   transition: border 0.3s linear;
   width: calc(100%);
   padding: 1em;
@@ -139,7 +139,7 @@ const StyledLink = styled(Link)`
   display: flex;
   font-size: 1em;
   text-decoration: none;
-  color: ${getThemeLink};
+  color: ${(props) => getThemeColor(props.theme, "blueDim")};
   &:hover {
     text-decoration: underline;
   }
@@ -179,7 +179,7 @@ const ImgWrapper = styled(ContactImg)`
   max-height: 1.375em;
   margin: 0;
   padding: 0;
-  background-color: ${getThemeBg};
+  background-color: ${(props) => getThemeColor(props.theme, "bgH")};
   transition: all 0.3s linear;
   @media print {
       background-color: white;
