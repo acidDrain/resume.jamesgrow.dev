@@ -12,7 +12,6 @@ import {
 const ExperienceWrapper = styled.article`
   display: flex;
   flex-direction: column;
-  margin: auto;
   @media print {
     color: black;
     border: none;
@@ -112,8 +111,6 @@ const History = styled.div`
 const HistoryRow = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0rem;
-  padding: 0rem;
   @media print {
     page-break-before: auto;
     page-break-inside: avoid;
@@ -127,6 +124,7 @@ const HistoryRow = styled.div`
 const StyledHistoryRecord = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 1.75rem;
   margin: auto;
   background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
   color: ${({ theme }) => getThemeColor(theme)("fg2")};
@@ -134,20 +132,8 @@ const StyledHistoryRecord = styled.div`
   border-right: ${(props) => `thin solid ${getThemeColor(props.theme)("orangeDim")}`};
   border-top: ${props => `thin ${props.borderTop} ${getThemeColor(props.theme)("orangeDim")}`};
   border-bottom: ${props => `thin ${props.borderBottom} ${getThemeColor(props.theme)("orangeDim")}`};
-  padding: 1.75rem;
   overflow-y: ${({ borderBottom }) => (borderBottom === "solid") ? "hidden" : "auto"};
-  @media screen and (min-width: 100px) and (max-width: 800px) {
-    flex: 0 1 90%;
-  }
-  @media screen and (min-width: 801px) and (max-width: 1919px) {
-    flex: 0 1 92%;
-  }
-  @media screen and (min-width: 1920px) and (max-width: 2200px) {
-    flex: 0 1 96%;
-  }
-  @media screen and (min-width: 2201px) {
-    flex: 0 1 96%;
-  }
+  flex: 0 1 100%;
   @media print {
     page-break-inside: avoid;
     background-color: white;
@@ -259,7 +245,7 @@ const StyledTimelineBullet = styled.div`
   display: inline-flex;
   flex-direction: column;
   padding-top: 2.8em;
-  margin-left: 0.3em;
+  padding-right: 1.0em;
   div:nth-child(odd)  {
     display: inline-flex;
     flex: 0 2 1%;
@@ -295,7 +281,7 @@ const HistoryRowWrapper = ({ children, displayBullet, borderTop, borderBottom, .
         displayBullet &&
           <TimelineBullet borderBottom={borderBottom} {...props} />
       }
-      <StyledHistoryRecord borderTop={borderTop} borderBottom={borderBottom} {...props}>{children}</StyledHistoryRecord>
+      <StyledHistoryRecord displayBullet={displayBullet} borderTop={borderTop} borderBottom={borderBottom} {...props}>{children}</StyledHistoryRecord>
     </Row>
   );
 };
