@@ -2,12 +2,10 @@ const getThemeColors = ({ colors }) => ({
   ...colors,
 });
 
-const getThemeBg2 = ({ theme }) => getThemeColors(theme).bg2;
-const getThemeBg = ({ theme }) => getThemeColors(theme).bg;
-const getThemeFg = ({ theme }) => getThemeColors(theme).fg;
-const getThemeLink = ({ theme }) => getThemeColors(theme).link;
-const getThemeBorder = ({ theme }) => getThemeColors(theme).borderColor;
-
+const getThemeColor = ({ colors }) => (accent => {
+  const lowercaseAccent = (typeof accent === String) ? String.prototype.toLowerCase(accent) : accent;
+  return getThemeColors({ colors })[lowercaseAccent];
+});
 
 /* Date Formatting Helpers */
 const toDays = (end, start) => Math.floor((end-start)/(86400*1000.0));
@@ -37,4 +35,4 @@ const getLatestTime = ({ positions }) => positions.map(p => p.endDate).reduce((a
 
 const getEarliestTime = ({ positions }) => positions.map(p => p.startDate).reduce((acc, curr) => (curr <= acc) ? curr : acc);
 
-export { getThemeBg2, getThemeBg, getThemeFg, getThemeBorder, getThemeLink, toDays, toMonths, toDuration, formatDateString, getEarliestTime, getLatestTime };
+export {  getThemeColor, toDays, toMonths, toDuration, formatDateString, getEarliestTime, getLatestTime };

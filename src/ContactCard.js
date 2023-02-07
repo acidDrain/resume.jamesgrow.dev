@@ -3,12 +3,12 @@ import GithubLogo from "./assets/github-mark.svg";
 import GithubLogoWhite from "./assets/github-mark-white.svg";
 import LinkedInLogo from "./assets/LinkedIn-Logo.png";
 import { Link, Button } from "./Components";
-import { getThemeBg, getThemeBg2, getThemeLink } from "./util";
+import { getThemeColor } from "./util";
 
 const ContactCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${getThemeBg2};
+  background-color: ${props => getThemeColor(props.theme)("bgH")};
   transition: border 0.3s linear;
   width: calc(100%);
   padding: 1em;
@@ -53,11 +53,11 @@ const ThemeToggleButtonWrapper = styled.div`
 const ToggleThemeButton = styled(Button)`
   display: flex;
   cursor: pointer;
-  @media screen and (min-width: 1rem) and (max-width: 50.9rem) {
+  @media screen and (min-width: 100px) and (max-width: 800px) {
     padding: 0.50em;
     margin: 1em auto 1.0em auto;
   }
-  @media screen and (min-width: 51.0rem) {
+  @media screen and (min-width: 801px) {
     padding: 1em;
   }
   @media print {
@@ -139,7 +139,7 @@ const StyledLink = styled(Link)`
   display: flex;
   font-size: 1em;
   text-decoration: none;
-  color: ${getThemeLink};
+  color: ${(props) => getThemeColor(props.theme)("yellow")};
   &:hover {
     text-decoration: underline;
   }
@@ -179,7 +179,7 @@ const ImgWrapper = styled(ContactImg)`
   max-height: 1.375em;
   margin: 0;
   padding: 0;
-  background-color: ${getThemeBg};
+  background-color: ${(props) => getThemeColor(props.theme)("bgH")};
   transition: all 0.3s linear;
   @media print {
       background-color: white;

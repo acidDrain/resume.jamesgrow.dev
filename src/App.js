@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { getThemeFg, getThemeBg } from "./util";
+import { getThemeColor } from "./util";
 import { Experience, Header } from "./Components";
 import ContactCard from "./ContactCard";
 import themes from "./styles/themes";
@@ -15,7 +15,7 @@ const AppWrapper = styled.div`
 
   @media screen and (min-width: 100px) and (max-width: 800px) {
     flex-direction: column;
-    max-width: calc(90vw);
+    max-width: calc(91vw);
     margin: 1rem auto;
   }
 
@@ -49,6 +49,7 @@ const AppWrapper = styled.div`
   @media print {
     color: black;
     background-color: white;
+    border-color: black;
     font-size: 100%;
   }
 `;
@@ -62,14 +63,14 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    color: ${getThemeFg};
-    background-color: ${getThemeBg};
+    color: ${(props) => getThemeColor(props.theme)("fg")};
+    background-color: ${(props) => getThemeColor(props.theme)("bg")};
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
     transition: all 0.3s linear;
-
     @media print {
       color: black;
       background-color: white;
+      border-color: black;
     }
   }
 `;
