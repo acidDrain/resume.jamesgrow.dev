@@ -16,7 +16,6 @@ const StyledToolTip = styled(ToolTip)`
   color: ${getThemeFg};
   background-color: transparent;
   transition: color 0.5s linear, background-color 0.5s linear, visibility 0.3s ease-in;
-  padding: 1.5em 1.55em;
   .tooltipText {
     visibility: hidden;
     background-color: ${getThemeBg};
