@@ -188,6 +188,7 @@ const SkillsAndTech = styled.div`
 const HistorySummary = styled.div`
   text-align: left;
   margin: 0.0rem;
+  color: ${props => getThemeColor(props.theme)("fg")};
   @media screen and (max-width:800px) {
     font-size: calc(0.8em);
   }
@@ -217,7 +218,8 @@ const P = styled.p`
 
 const HistoryDescription = styled.ul`
   text-align: left;
-  padding-left: 1.0rem;
+  padding-left: 1.0em;
+  color: ${props => getThemeColor(props.theme)("fg")};
   @media screen and (max-width: 800px) {
     font-size: calc(0.7em);
   }
