@@ -6,6 +6,7 @@ const StyledHeader = styled.header`
   display: flex;
   max-width: calc(100%);
   border: thin solid;
+  border-color: ${({ theme }) => getThemeColor(theme)("orange").replace(/1\.0/, "0.5")};
   background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
   @media screen and (min-width: 1rem) and (max-width: 50rem) {
     padding: 0.35em 1.0em;
@@ -30,9 +31,9 @@ const StyledHeader = styled.header`
   }
 `;
 
-const Header = (props) => (
+const Header = ({ children }) => (
   <StyledHeader>
-      {props.children}
+      {children}
   </StyledHeader>
 );
 

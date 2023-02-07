@@ -12,27 +12,33 @@ const ToolTip = ({ children, className, toolTipText, ...props }) =>
 const StyledToolTip = styled(ToolTip)`
   position: relative;
   display: inline-block;
-  font-size: 0.4rem;
+  font-size: 0.5em;
   color: ${({ theme }) => getThemeColor(theme, "fg")};
   background-color: transparent;
   transition: color 0.5s linear, background-color 0.5s linear, visibility 0.3s ease-in;
-  padding: 1.5em 1.55em;
   .tooltipText {
     visibility: hidden;
-    background-color: ${({ theme }) => getThemeColor(theme, "bgH")};
-    color: ${({ theme }) => getThemeColor(theme, "orange")};
-    border-radius: 0.7em;
+    background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
+    border: thin solid;
+    border-color: ${({ theme }) => getThemeColor(theme)("bg2")};
+    color: ${({ theme }) => getThemeColor(theme)("fg")};
+    border-radius: 1.25em;
     position: absolute;
-    width: 14em;
+    overflow-wrap: never;
     margin-top: -0.5em;
     margin-left: -13.5em;
     z-index: 1;
+    padding: 1.0em;
   }
   &:hover .tooltipText {
     visibility: visible;
     opacity: 0.85;
-    color: ${({ theme }) => getThemeColor(theme, "bg")};
-    background-color: ${({ theme }) => getThemeColor(theme, "fg")};
+    padding: 1.0em;
+    color: ${({ theme }) => getThemeColor(theme)("fg")};
+    background-color: ${({ theme }) => getThemeColor(theme)("bg")};
+    border: thin solid;
+    border-color: ${({ theme }) => getThemeColor(theme)("fg2")};
+    overflow-wrap: never;
   }
   @media print {
     display: none;
@@ -54,14 +60,15 @@ const ButtonComponent = ({ onClick, label, tooltipText, ...props }) => (
 
 
 const Button = styled(ButtonComponent)`
-  color: ${(props) => props.theme.colors.fg};
-  background-color: ${(props) => props.theme.colors.bg};
-  border-color: ${(props) => props.theme.colors.borderColor};
+  color: ${(props) => getThemeColor(props.theme)("fg")};
+  background-color: ${(props) => getThemeColor(props.theme)("bgS")};
+  border-color: ${(props) => getThemeColor(props.theme)("orange")};
   border-radius: 5px;
   border-style: solid;
   border-width: thin;
   transition: background-color 0.3s linear;
   outline: none;
+  padding: 0;
   &:active {
     outline: none;
   }
@@ -70,8 +77,8 @@ const Button = styled(ButtonComponent)`
   }
   &:hover {
     outline: none;
-    background-color: ${(props) => props.theme.colors.link};
-    border-color: ${(props) => props.theme.colors.borderColor};
+    background-color: ${(props) => getThemeColor(props.theme)("bg2")};
+    border-color: ${(props) => getThemeColor(props.theme)("orangeDim")};
   }
   @media print {
     display: none;

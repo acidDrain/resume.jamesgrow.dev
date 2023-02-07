@@ -49,6 +49,7 @@ const AppWrapper = styled.div`
   @media print {
     color: black;
     background-color: white;
+    border-color: black;
     font-size: 100%;
   }
 `;
@@ -66,10 +67,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => getThemeColor(props.theme)("bg")};
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
     transition: all 0.3s linear;
-
     @media print {
       color: black;
       background-color: white;
+      border-color: black;
     }
   }
 `;

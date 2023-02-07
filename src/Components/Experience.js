@@ -17,6 +17,7 @@ const ExperienceWrapper = styled.article`
     color: black;
     border: none;
     background-color: white;
+    border-color: black;
     page-break-before: auto;
     page-break-inside: auto;
     page-break-after: avoid;
@@ -117,6 +118,9 @@ const HistoryRow = styled.div`
     page-break-before: auto;
     page-break-inside: avoid;
     page-break-after: auto;
+    color: black;
+    background-color: white;
+    border-color: black;
   }
 `;
 
@@ -125,12 +129,13 @@ const StyledHistoryRecord = styled.div`
   flex-direction: column;
   width: 100%;
   background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
-  color: ${({ theme }) => getThemeColor(theme)("green")};
+  color: ${({ theme }) => getThemeColor(theme)("fg2")};
   border: ${(props) => `1px solid ${getThemeColor(props.theme)("orangeDim").replace(/1\.0/, "0.5")}`};
   padding: 1.75rem;
   @media print {
     page-break-inside: avoid;
     background-color: white;
+    border-color: black;
     color: black;
   }
 `;
@@ -145,12 +150,16 @@ const SkillsAndTech = styled.div`
     display: flex;
     flex: 0 2 auto;
     text-align: left;
-    color: ${({ theme }) => getThemeColor(theme)("fg2")};
+    color: ${({ theme }) => getThemeColor(theme)("orange")};
     @media screen and (max-width: 800px) {
       font-size: 0.9em;
     }
     @media screen and (min-width: 801px) {
       font-size: 0.9em;
+    }
+    @media print {
+      color: black;
+      background-color: white;
     }
   }
   span:nth-child(even) {
@@ -158,12 +167,16 @@ const SkillsAndTech = styled.div`
     flex: 2 2 auto;
     align-items: center;
     padding-left: 0.75em;
-    color: ${({ theme }) => getThemeColor(theme)("fg3")};
+    color: ${({ theme }) => getThemeColor(theme)("fg2")};
     @media screen and (min-width: 160px) and (max-width: 800px) {
       font-size: 0.6em;
     }
     @media screen and (min-width: 801px) {
       font-size: 0.7em;
+    }
+    @media print {
+      color: black;
+      background-color: white;
     }
   }
   @media print {
@@ -344,7 +357,7 @@ const FlexTitle = styled(H4)`
 `;
 
 const FlexDuration = styled(FlexItem)`
-  color: ${({ theme }) => getThemeColor(theme)("fg")};
+  color: ${({ theme, variant }) => getThemeColor(theme)(variant)};
   @media screen and (max-width: 800px) {
     flex: 0 2 auto;
     justify-content: flex-start;
@@ -388,25 +401,25 @@ const CompanyRecordHeaderWrapper = (
 ) => (
     <StyledCompanyRecordHeader>
       <Row>
-        <FlexTitle variant={(props) => getThemeColor(props.theme, "green")}>
+        <FlexTitle variant={(props) => getThemeColor(props.theme)("green")}>
           <strong>{title}</strong>
         </FlexTitle>
-        <FlexDuration variant={(props) => getThemeColor(props.theme, "red")}>
+        <FlexDuration variant={(props) => getThemeColor(props.theme)("fg2")}>
           <strong>{duration}</strong>
         </FlexDuration>
       </Row>
       <Row>
-        <FlexItem variant={(props) => getThemeColor(props.theme, "red")}>
+        <FlexItem variant={(props) => getThemeColor(props.theme)("orange")}>
           <strong>{company}</strong>
         </FlexItem>
       </Row>
       <Row>
-        <FlexItem variant={(props) => getThemeColor(props.theme, "red")}>{formatDateString(startDate)}</FlexItem>
+        <FlexItem variant={(props) => getThemeColor(props.theme)("fg3")}>{formatDateString(startDate)}</FlexItem>
         <FlexItem>&nbsp;-&nbsp;</FlexItem>
-        <FlexItem variant={(props) => getThemeColor(props.theme, "red")}>{formatDateString(endDate)}</FlexItem>
+        <FlexItem variant={(props) => getThemeColor(props.theme)("fg3")}>{formatDateString(endDate)}</FlexItem>
       </Row>
       <Row>
-        <FlexItem variant={(props) => getThemeColor(props.theme, "red")}>
+        <FlexItem variant={(props) => getThemeColor(props.theme)("fg4")}>
           {location}
         </FlexItem>
       </Row>

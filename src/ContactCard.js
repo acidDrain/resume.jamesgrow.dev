@@ -53,11 +53,11 @@ const ThemeToggleButtonWrapper = styled.div`
 const ToggleThemeButton = styled(Button)`
   display: flex;
   cursor: pointer;
-  @media screen and (min-width: 1rem) and (max-width: 50.9rem) {
+  @media screen and (min-width: 100px) and (max-width: 800px) {
     padding: 0.50em;
     margin: 1em auto 1.0em auto;
   }
-  @media screen and (min-width: 51.0rem) {
+  @media screen and (min-width: 801px) {
     padding: 1em;
   }
   @media print {
@@ -139,7 +139,7 @@ const StyledLink = styled(Link)`
   display: flex;
   font-size: 1em;
   text-decoration: none;
-  color: ${(props) => getThemeColor(props.theme)("purpleDim")};
+  color: ${(props) => getThemeColor(props.theme)("yellow")};
   &:hover {
     text-decoration: underline;
   }
