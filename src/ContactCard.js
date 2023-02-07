@@ -8,7 +8,7 @@ import { getThemeColor } from "./util";
 const ContactCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${props => getThemeColor(props.theme)("bg01")};
+  background-color: ${props => getThemeColor(props.theme)("bgH")};
   transition: border 0.3s linear;
   width: calc(100%);
   padding: 1em;
@@ -139,7 +139,7 @@ const StyledLink = styled(Link)`
   display: flex;
   font-size: 1em;
   text-decoration: none;
-  color: ${(props) => getThemeColor(props.theme)("blueDim")};
+  color: ${(props) => getThemeColor(props.theme)("purpleDim")};
   &:hover {
     text-decoration: underline;
   }

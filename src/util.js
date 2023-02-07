@@ -2,7 +2,10 @@ const getThemeColors = ({ colors }) => ({
   ...colors,
 });
 
-const getThemeColor = ({ colors }) => ((accent) => (getThemeColors({ colors }))[accent]);
+const getThemeColor = ({ colors }) => (accent => {
+  const lowercaseAccent = (typeof accent === String) ? String.prototype.toLowerCase(accent) : accent;
+  return getThemeColors({ colors })[lowercaseAccent];
+});
 
 /* Date Formatting Helpers */
 const toDays = (end, start) => Math.floor((end-start)/(86400*1000.0));

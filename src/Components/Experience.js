@@ -38,7 +38,7 @@ const H2 = styled.h2`
     width: calc(100%);
     height: 0.80rem;
     align-self: center;
-    border-bottom: thin solid ${({ theme }) => getThemeColor(theme)("purple")};
+    border-bottom: thin solid ${({ theme }) => getThemeColor(theme)("fg4")};
     border-left: none;
     margin-left: 0.20rem;
     }
@@ -46,7 +46,7 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
   display: flex;
-  color: ${({ theme }) => getThemeColor(theme)("orange")};
+  color: ${({ theme }) => getThemeColor(theme)("orangeDim")};
   margin: auto;
   padding: 0rem 0.0rem 0.75rem 0rem;
   flex: 0 1 auto;
@@ -125,8 +125,8 @@ const StyledHistoryRecord = styled.div`
   flex-direction: column;
   width: 100%;
   background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
-  color: ${({ theme }) => getThemeColor(theme)("fg4")};
-  border: ${(props) => `1px solid ${getThemeColor(props.theme)("orange").replace(/1\.0/, "0.5")}`};
+  color: ${({ theme }) => getThemeColor(theme)("green")};
+  border: ${(props) => `1px solid ${getThemeColor(props.theme)("orangeDim").replace(/1\.0/, "0.5")}`};
   padding: 1.75rem;
   @media print {
     page-break-inside: avoid;
