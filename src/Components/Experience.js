@@ -49,7 +49,7 @@ const H3 = styled.h3`
   display: flex;
   color: ${({ theme }) => getThemeColor(theme)("orangeDim")};
   margin: auto;
-  padding: 0rem 0.0rem 0.75rem 0rem;
+  padding: 0rem 0.0rem 0.75em 0rem;
   flex: 0 1 auto;
   &::after {
     content: "";
@@ -127,11 +127,27 @@ const HistoryRow = styled.div`
 const StyledHistoryRecord = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin: auto;
   background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
   color: ${({ theme }) => getThemeColor(theme)("fg2")};
-  border: ${(props) => `1px solid ${getThemeColor(props.theme)("orangeDim").replace(/1\.0/, "0.5")}`};
+  border-left: ${(props) => `thin solid ${getThemeColor(props.theme)("orangeDim")}`};
+  border-right: ${(props) => `thin solid ${getThemeColor(props.theme)("orangeDim")}`};
+  border-top: ${props => `thin ${props.borderTop} ${getThemeColor(props.theme)("orangeDim")}`};
+  border-bottom: ${props => `thin ${props.borderBottom} ${getThemeColor(props.theme)("orangeDim")}`};
   padding: 1.75rem;
+  overflow-y: ${({ borderBottom }) => (borderBottom === "solid") ? "hidden" : "auto"};
+  @media screen and (min-width: 100px) and (max-width: 800px) {
+    flex: 0 1 90%;
+  }
+  @media screen and (min-width: 801px) and (max-width: 1919px) {
+    flex: 0 1 92%;
+  }
+  @media screen and (min-width: 1920px) and (max-width: 2200px) {
+    flex: 0 1 96%;
+  }
+  @media screen and (min-width: 2201px) {
+    flex: 0 1 96%;
+  }
   @media print {
     page-break-inside: avoid;
     background-color: white;
@@ -240,51 +256,46 @@ const LI = styled.li`
 `;
 
 const StyledTimelineBullet = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  margin: 0.0rem;
-  font-size: 1.0rem;
+  padding-top: 2.8em;
+  margin-left: 0.3em;
   div:nth-child(odd)  {
-    display: flex;
-    flex: 0 0 auto;
-    border-radius: 0.5rem;
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color: ${({ theme }) => getThemeColor(theme)("fg4")};
+    display: inline-flex;
+    flex: 0 2 1%;
+    border-radius: 0.5em;
+    min-width: 0.75em;
+    min-height: 0.75em;
+    background-color: ${({ theme }) => getThemeColor(theme)("fg")};
   }
-  @media screen and (max-width: 800px) {
-    margin-top: 2.4em;
-  }
-  @media screen and (min-width: 801px) and (max-width: 1919px) {
-    margin-top: 2.6em;
-  }
-  @media screen and (min-width: 1920px) and (max-width: 2200px) {
-    margin-top: 2.8rem;
-  }
-  @media screen and (min-width: 2201px) {
-    margin-top: 2.7rem;
-  }
-  @media print {
-    margin-top: 1.5rem;
+  div:nth-child(even)  {
+    content: "";
+    align-self: center;
+    border-radius: 1.0em;
+    flex: 2 0 100%;
+    margin: calc((2.8em - 1.0em) / 2) 0rem;
+    border: thin solid ${({ theme }) => getThemeColor(theme)("fg")};
+    display: ${props => props.borderBottom === "solid" ? "none" : "inline-flex"};
   }
 `;
 
-const TimelineBullet = ({ props }) => {
+const TimelineBullet = ({ ...props }) => {
   return (
     <StyledTimelineBullet {...props}>
+      <div>&nbsp;</div>
       <div></div>
     </StyledTimelineBullet>
   );
 };
 
-const HistoryRowWrapper = ({ children, borders, indent }) => {
+const HistoryRowWrapper = ({ children, displayBullet, borderTop, borderBottom, ...props }) => {
   return (
-    <Row>
+    <Row borderBottom={borderBottom} {...props}>
       {
-        indent &&
-          <TimelineBullet />
+        displayBullet &&
+          <TimelineBullet borderBottom={borderBottom} {...props} />
       }
-      <StyledHistoryRecord style={{ marginLeft: indent, borderTop: borders.top, borderBottom: borders.bottom }}>{children}</StyledHistoryRecord>
+      <StyledHistoryRecord borderTop={borderTop} borderBottom={borderBottom} {...props}>{children}</StyledHistoryRecord>
     </Row>
   );
 };
@@ -311,7 +322,7 @@ const StyledCompanyRecordHeader = styled.div`
 const Row = styled.div`
   display: flex;
   justify-content: flex-start;
-  max-width: 100%;
+  overflow-y: ${({ borderBottom }) => (borderBottom === "solid") ? "hidden" : "visible"};
   @media screen and (min-width: 100px) and (max-width: 800px) {
     font-size: 0.75rem;
   }
@@ -333,7 +344,7 @@ const Row = styled.div`
 
 const FlexItem = styled.div`
   display: flex;
-  color: ${(props) => props.variant};
+  color: ${({ theme, variant }) => getThemeColor(theme)(variant)};
   padding: 0.0312em 0.0em 0.0em 0.0em;
   font-size: 0.8rem;
   @media print {
@@ -344,6 +355,7 @@ const FlexItem = styled.div`
 
 const FlexTitle = styled(H4)`
   align-items: flex-start;
+  color: ${({ theme, variant }) => getThemeColor(theme)(variant)};
   @media screen and (min-width: 100px) and (max-width: 800px) {
     flex: 0 1 auto;
   }
@@ -403,7 +415,7 @@ const CompanyRecordHeaderWrapper = (
 ) => (
     <StyledCompanyRecordHeader>
       <Row>
-        <FlexTitle variant={(props) => getThemeColor(props.theme)("green")}>
+        <FlexTitle variant="fg">
           <strong>{title}</strong>
         </FlexTitle>
         <FlexDuration variant={(props) => getThemeColor(props.theme)("fg2")}>
@@ -431,7 +443,6 @@ const CompanyRecordHeaderWrapper = (
 const StyledCompanyNameAndDuration = styled.div`
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.0rem;
   @media print {
     color: black;
     background-color: white;
@@ -440,8 +451,10 @@ const StyledCompanyNameAndDuration = styled.div`
 
 const Duration = styled.div`
   display: flex;
-  align-items: center;
-  flex: 1 0 auto;
+  flex: 4 0 auto;
+  align-self: center;
+  margin-bottom: 0.80em;
+  margin-top: 0.20em;
   color: ${(props) => getThemeColor(props.theme, "red")};
   padding: 0rem 0.5rem 0.5rem 0rem;
   &::before {
@@ -469,8 +482,6 @@ const Duration = styled.div`
 
 const CompanyNameAndDuration = ({ company, duration }) => <StyledCompanyNameAndDuration><H3>{company}</H3><Duration>{duration}</Duration></StyledCompanyNameAndDuration>
 
-const ShouldDisplayBorder = (i, l, c) => ({ top: ((i === 0)  ? `thin solid ${c}` : `thin dotted ${c}`), bottom: ((i === (l-1) ? `thin solid ${c}` : "none")) });
-
 const Experience = ({ experience, ...props }) => {
   return (
     <ExperienceWrapper>
@@ -496,8 +507,9 @@ const Experience = ({ experience, ...props }) => {
                 index
               ) => (
                   <HistoryRowWrapper
-                    indent={positions.length > 1 && "1rem"}
-                    borders={ShouldDisplayBorder(index, positions.length, getThemeColor(props.theme)("orange").replace(/1\.0/, '0.5'))}
+                    displayBullet={(positions.length > 1) ? true : false}
+                    borderTop={(positions.length >= 1 && index === 0) ? "solid" : "dotted"}
+                    borderBottom={(positions.length > 1 && index < (positions.length-1) && index >= 0) ? "dotted" : "solid"}
                     key={`${endDate}-${startDate}`}
                   >
                     {positions.length < 2 ?
