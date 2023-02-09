@@ -73,7 +73,7 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   display: flex;
-  color: ${({ theme }) => getThemeColor(theme)("fg")};
+  color: ${({ theme }) => getThemeColor(theme)("yellow")};
   margin: auto 0em;
   flex: 0 1 auto;
   &::after {
@@ -135,7 +135,9 @@ const StyledHistoryRecord = styled.div`
   overflow-y: ${({ borderBottom }) => (borderBottom === "solid") ? "hidden" : "auto"};
   flex: 0 1 100%;
   @media print {
-    page-break-inside: avoid;
+    page-break-inside: auto;
+    page-break-after: auto;
+    page-break-before: auto;
     background-color: white;
     border-color: black;
     color: black;
@@ -244,7 +246,6 @@ const LI = styled.li`
 const StyledTimelineBullet = styled.div`
   display: inline-flex;
   flex-direction: column;
-  padding-top: 2.8em;
   padding-right: 1.0em;
   div:nth-child(odd)  {
     display: inline-flex;
@@ -253,15 +254,31 @@ const StyledTimelineBullet = styled.div`
     min-width: 0.75em;
     min-height: 0.75em;
     background-color: ${({ theme }) => getThemeColor(theme)("fg")};
+    margin-top: 2.25rem;
+    @media print {
+      color: white;
+      background-color: black;
+      border-color: black;
+    }
   }
   div:nth-child(even)  {
     content: "";
     align-self: center;
     border-radius: 1.0em;
-    flex: 2 0 100%;
-    margin: calc((2.8em - 1.0em) / 2) 0rem;
+    flex: 2 0 calc(100% - 1.5rem);
+    margin: 0.5em 0.0rem;
     border: thin solid ${({ theme }) => getThemeColor(theme)("fg")};
     display: ${props => props.borderBottom === "solid" ? "none" : "inline-flex"};
+    @media print {
+      color: white;
+      background-color: black;
+      border-color: black;
+    }
+  }
+  @media print {
+    color: black;
+    background-color: white;
+      padding-top: 2.3rem;
   }
 `;
 
@@ -294,9 +311,9 @@ const HR = styled.hr`
       margin: 1.1rem 0.0rem;
   }
   @media print {
-    color: transparent;
-    background-color: transparent;
-    border-color: transparent;
+    color: black;
+    background-color: white;
+    border-color: black;
   }
 `;
 
@@ -325,6 +342,8 @@ const Row = styled.div`
     page-break-after: auto;
     page-break-before: auto;
     page-break-inside: auto;
+    background-color: white;
+    color: black;
   }
 `;
 
@@ -334,8 +353,8 @@ const FlexItem = styled.div`
   padding: 0.0312em 0.0em 0.0em 0.0em;
   font-size: 0.8rem;
   @media print {
-    color: black;
-    background-color: white;
+    color: black !important;
+    background-color: white !important;
   }
 `;
 
@@ -404,22 +423,22 @@ const CompanyRecordHeaderWrapper = (
         <FlexTitle variant="fg">
           <strong>{title}</strong>
         </FlexTitle>
-        <FlexDuration variant={(props) => getThemeColor(props.theme)("fg2")}>
+        <FlexDuration variant="yellow">
           <strong>{duration}</strong>
         </FlexDuration>
       </Row>
       <Row>
-        <FlexItem variant={(props) => getThemeColor(props.theme)("orange")}>
+        <FlexItem variant="orange">
           <strong>{company}</strong>
         </FlexItem>
       </Row>
       <Row>
-        <FlexItem variant={(props) => getThemeColor(props.theme)("fg3")}>{formatDateString(startDate)}</FlexItem>
+        <FlexItem variant="fg2">{formatDateString(startDate)}</FlexItem>
         <FlexItem>&nbsp;-&nbsp;</FlexItem>
-        <FlexItem variant={(props) => getThemeColor(props.theme)("fg3")}>{formatDateString(endDate)}</FlexItem>
+        <FlexItem variant="fg2">{formatDateString(endDate)}</FlexItem>
       </Row>
       <Row>
-        <FlexItem variant={(props) => getThemeColor(props.theme)("fg4")}>
+        <FlexItem variant="fg2">
           {location}
         </FlexItem>
       </Row>
