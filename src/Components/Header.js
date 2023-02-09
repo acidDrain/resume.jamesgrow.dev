@@ -8,16 +8,16 @@ const StyledHeader = styled.header`
   border: thin solid;
   border-color: ${({ theme }) => getThemeColor(theme)("orangeDim")};
   background-color: ${({ theme }) => getThemeColor(theme)("bgH")};
-  @media screen and (min-width: 1rem) and (max-width: 50rem) {
+  @media screen and (min-width: 100px) and (max-width: 800px) {
     padding: 0.35em 1.0em;
   }
-  @media screen and (min-width: 50.1rem) and (max-width: 119.99rem) {
+  @media screen and (min-width: 801px) and (max-width: 1919px) {
     padding: 0em;
   }
-  @media screen and (min-width: 120rem) and (max-width: 142.10rem) {
+  @media screen and (min-width: 1920px) and (max-width: 2200px) {
     padding: 0em 0em 0.5em 0em;
   }
-  @media screen and (min-width: 142.11rem) {
+  @media screen and (min-width: 2201px) {
     margin: 0em;
     padding: 0em;
   }
