@@ -171,7 +171,7 @@ const SkillsAndTech = styled.div`
     flex: 2 2 auto;
     align-items: center;
     padding-left: 0.75em;
-    color: ${({ theme }) => getThemeColor(theme)("fg2")};
+    color: ${({ theme }) => getThemeColor(theme)("fg3")};
     @media screen and (min-width: 160px) and (max-width: 800px) {
       font-size: 0.6em;
     }
@@ -214,6 +214,7 @@ const P = styled.p`
   text-align: left;
   margin: 0.0rem;
   padding: 0.5rem 0rem;
+  color: ${({ theme }) => getThemeColor(theme)("fg")};
   @media print {
     page-break-inside: avoid;
     page-break-after: auto;
@@ -223,7 +224,7 @@ const P = styled.p`
 const HistoryDescription = styled.ul`
   text-align: left;
   padding-left: 1.0em;
-  color: ${props => getThemeColor(props.theme)("fg")};
+  color: ${({ theme }) => getThemeColor(theme)("fg")};
   @media screen and (max-width: 800px) {
     font-size: calc(0.7em);
   }
@@ -241,6 +242,7 @@ const HistoryDescription = styled.ul`
 
 const LI = styled.li`
   margin: 0rem 0rem 0.33rem 0rem;
+  color: ${({ theme }) => getThemeColor(theme)("fg")};
 `;
 
 const StyledTimelineBullet = styled.div`
@@ -438,7 +440,7 @@ const CompanyRecordHeaderWrapper = (
         <FlexItem variant="fg2">{formatDateString(endDate)}</FlexItem>
       </Row>
       <Row>
-        <FlexItem variant="fg2">
+        <FlexItem variant="fg4">
           {location}
         </FlexItem>
       </Row>
