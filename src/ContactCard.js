@@ -67,45 +67,31 @@ const ToggleThemeButton = styled(Button)`
 
 const StyledTable = styled.div`
   display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  align-self: center;
   @media screen and (min-width: 100px) and (max-width: 600px) {
     flex-direction: column;
     font-size: 1.0rem;
-    margin: auto 0em;
-    align-self: center;
     padding-bottom: 0.5em;
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 601px) and (max-width: 800px) {
     flex-direction: row;
     font-size: 1.0rem;
-    margin: auto;
-    align-self: center;
     padding-bottom: 0.5em;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 801px) and (max-width: 1919px) {
     flex-direction: row;
     font-size: 0.90rem;
     padding: 0.25em;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
   }
   @media screen and (min-width: 1920px) and (max-width: 2200px) {
-    align-content: center;
-    align-self: center;
     font-size: 1.15rem;
-    margin: auto;
   }
   @media screen and (min-width: 2201px) {
     font-size: 1.25rem;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    align-self: center;
   }
 `;
 
@@ -222,13 +208,22 @@ const H1 = styled.h1`
     margin: 0.25em auto;
     padding: 0.25em auto;
   }
-
 `;
 
 const PhoneEntity = String.fromCodePoint(128222);
 const EmailEntity = String.fromCodePoint(128231);
 
-const ContactCard = ({ name, phone, email, linkedInUsername, github, activeTheme, theme, themeToggle, themeTogglelabel }) => (
+const ContactCard = ({
+  name,
+  phone,
+  email,
+  linkedInUsername,
+  github,
+  activeTheme,
+  theme,
+  themeToggle,
+  themeTogglelabel,
+}) => (
   <ContactCardWrapper>
     <ThemeToggleButtonWrapper>
       <H1>{name}</H1>
