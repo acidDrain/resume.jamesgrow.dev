@@ -256,7 +256,7 @@ const StyledTimelineBullet = styled.div`
     min-width: 0.75em;
     min-height: 0.75em;
     background-color: ${({ theme }) => getThemeColor(theme)("fg")};
-    margin-top: 2.25rem;
+    margin-top: 2.75em;
     @media print {
       color: white;
       background-color: black;
@@ -267,10 +267,10 @@ const StyledTimelineBullet = styled.div`
     content: "";
     align-self: center;
     border-radius: 1.0em;
-    flex: 2 0 calc(100% - 1.5rem);
-    margin: 0.5em 0.0rem;
+    flex: 2 0 calc(100% - 2.15em);
+    margin: 0.70em 0.0em;
     border: thin solid ${({ theme }) => getThemeColor(theme)("fg")};
-    display: ${props => props.borderBottom === "solid" ? "none" : "inline-flex"};
+    display: ${({ borderBottom }) => borderBottom === "solid" ? "none" : "inline-flex"};
     @media print {
       color: white;
       background-color: black;
@@ -278,9 +278,7 @@ const StyledTimelineBullet = styled.div`
     }
   }
   @media print {
-    color: black;
-    background-color: white;
-      padding-top: 2.3rem;
+    display: none;
   }
 `;
 
@@ -462,7 +460,7 @@ const Duration = styled.div`
   align-self: center;
   margin-bottom: 0.80em;
   margin-top: 0.20em;
-  color: ${(props) => getThemeColor(props.theme, "red")};
+  color: ${(props) => getThemeColor(props.theme)("fg")};
   padding: 0rem 0.5rem 0.5rem 0rem;
   &::before {
     content: " 🕔 ";
