@@ -13,7 +13,7 @@ const StyledToolTip = styled(ToolTip)`
   position: relative;
   display: inline-block;
   font-size: 0.5em;
-  color: ${({ theme }) => getThemeColor(theme, "fg")};
+  color: ${({ theme }) => getThemeColor(theme)("fg")};
   background-color: transparent;
   transition: color 0.5s linear, background-color 0.5s linear, visibility 0.3s ease-in;
   .tooltipText {
