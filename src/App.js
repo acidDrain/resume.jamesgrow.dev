@@ -95,7 +95,7 @@ function App() {
           <ContactCard
             name="James M Grow"
             phone="+1 (650) 383-0609"
-            email="info@jamesgrow.dev"
+            email="jmgrow@gmail.com"
             linkedInUsername="jamesmgrow"
             github="acidDrain"
             activeTheme={currentTheme}
