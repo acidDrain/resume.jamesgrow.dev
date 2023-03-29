@@ -205,6 +205,8 @@ const HistorySummary = styled.div`
   @media print {
     page-break-inside: avoid;
     page-break-after: auto;
+    color: black;
+    background-color: white;
   }
 `;
 
@@ -218,6 +220,8 @@ const P = styled.p`
   @media print {
     page-break-inside: avoid;
     page-break-after: auto;
+    color: black;
+    background-color: white;
   }
 `;
 
@@ -237,12 +241,18 @@ const HistoryDescription = styled.ul`
   @media print {
     page-break-inside: avoid;
     page-break-after: auto;
+    color: black;
+    background-color: white;
   }
 `;
 
 const LI = styled.li`
   margin: 0rem 0rem 0.33rem 0rem;
   color: ${({ theme }) => getThemeColor(theme)("fg")};
+  @media print {
+    color: black;
+    background-color: white;
+  }
 `;
 
 const StyledTimelineBullet = styled.div`
@@ -320,6 +330,10 @@ const HR = styled.hr`
 const StyledCompanyRecordHeader = styled.div`
   display: flex;
   flex-direction: column;
+  @media print {
+    color: black;
+    background-color: white;
+  }
 `;
 
 const Row = styled.div`
@@ -361,6 +375,10 @@ const FlexItem = styled.div`
 const FlexTitle = styled(H4)`
   align-items: flex-start;
   color: ${({ theme, variant }) => getThemeColor(theme)(variant)};
+  @media print {
+    color: black;
+    background-color: white;
+  }
   @media screen and (min-width: 100px) and (max-width: 800px) {
     flex: 0 1 auto;
   }
