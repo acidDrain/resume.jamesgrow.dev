@@ -29,6 +29,45 @@ const ContactCardWrapper = styled.div`
   }
 `;
 
+const PrintToPDFButton = styled.button`
+  display: flex;
+  color: ${(props) => getThemeColor(props.theme)("fg")};
+  background-color: ${(props) => getThemeColor(props.theme)("bgS")};
+  border-color: ${(props) => getThemeColor(props.theme)("orange")};
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  transition: background-color 0.3s linear;
+  outline: none;
+  padding: 0.5em;
+  max-width: 50%;
+  margin: auto;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    outline: none;
+    background-color: ${(props) => getThemeColor(props.theme)("bg2")};
+    border-color: ${(props) => getThemeColor(props.theme)("orangeDim")};
+  }
+  @media print {
+    display: none;
+    outline: none;
+    border: none;
+  }
+`;
+
+const PrintToPDF = e => {
+  e.preventDefault();
+  window.print();
+};
+
+const PrintToPDFButtonComponent = ({ theme, themeToggle, children, ...props }) => <PrintToPDFButton onClick={(e) => PrintToPDF({ theme, themeToggle }, e)}>{children}</PrintToPDFButton>
+
+
 const ThemeToggleButtonWrapper = styled.div`
   display: flex;
   max-width: calc(100%);
@@ -252,6 +291,7 @@ const ContactCard = ({
         value={github}
       />
     </StyledTable>
+      <PrintToPDFButton theme={theme} themeToggle={themeToggle} onClick={PrintToPDF.bind(this)}>Print to PDF</PrintToPDFButton>
   </ContactCardWrapper>
 );
 
