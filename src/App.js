@@ -4,7 +4,11 @@ import { getThemeColor } from "./util";
 import { Experience, Header } from "./Components";
 import ContactCard from "./ContactCard";
 import themes from "./styles";
-import ExperienceData from "./data.json";
+import data from "./data.json";
+
+const ExperienceData = data.data.employment;
+const ContactData = data.data.contact;
+const Name = `${ContactData.firstName} ${ContactData.middleName} ${ContactData.lastName}`;
 
 const AppWrapper = styled.div`
   display: grid;
@@ -93,11 +97,11 @@ function App() {
       <AppWrapper>
         <Header>
           <ContactCard
-            name="James M Grow"
-            phone="+1 (650) 383-0609"
-            email="jmgrow@gmail.com"
-            linkedInUsername="jamesmgrow"
-            github="acidDrain"
+            name={Name}
+            phone={ContactData.phone}
+            email={ContactData.email}
+            linkedInUsername={ContactData.linkedIn}
+            github={ContactData.github}
             activeTheme={currentTheme}
             themeToggle={themeToggle}
             themeTogglelabel={String.fromCodePoint(
@@ -108,7 +112,7 @@ function App() {
         </Header>
         <Experience
           theme={themes[currentTheme]}
-          experience={ExperienceData.data}
+          experience={ExperienceData}
         />
       </AppWrapper>
     </ThemeProvider>

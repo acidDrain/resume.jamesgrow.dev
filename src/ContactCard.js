@@ -230,7 +230,7 @@ const H1 = styled.h1`
   flex: 1 0 auto;
   margin: 0.25em 0.25em;
   justify-content: center;
-  font-size: 2.5em;
+  font-size: 2.25em;
   @media screen and (min-width: 100px) and (max-width: 800px) {
     margin: 0.15em;
     padding-top: 0.15em;
@@ -281,7 +281,7 @@ const ContactCard = ({
         theme={theme}
         linkTo={`https://linkedin.com/in/${linkedInUsername}`}
         imgData={LinkedInLogo}
-        value="jamesmgrow"
+        value={linkedInUsername}
       />
       <ContactRecordImg
         alt="GitHub logo"
