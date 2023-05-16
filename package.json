@@ -63,7 +63,7 @@
   },
   "scripts": {
     "build": "rm -rf build docs ; NODE_ENV=production npm ci && node scripts/build.js && cp -aR build docs",
-    "dev": "docker compose up",
+    "dev": "( [ ! -d ./node_modules ] && npm ci ) ; docker compose up",
     "start": "node scripts/start.js",
     "stop": "docker compose down",
     "test": "node scripts/test.js"
