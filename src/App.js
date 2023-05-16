@@ -4,11 +4,15 @@ import { getThemeColor } from "./util";
 import { Experience, Header } from "./Components";
 import ContactCard from "./ContactCard";
 import themes from "./styles";
-import data from "./data.json";
+import Data from "./data.json";
 
-const ExperienceData = data.data.employment;
-const ContactData = data.data.contact;
+const { data } = Data;
+
+const ExperienceData = data.employment;
+const ContactData = data.contact;
 const Name = `${ContactData.firstName} ${ContactData.middleName} ${ContactData.lastName}`;
+const PageTitle = `${Name} | ${data.pageTitle}`;
+const PageDescription = `${Name} | ${data.pageDescription}`;
 
 const AppWrapper = styled.div`
   display: grid;
@@ -90,6 +94,10 @@ function App() {
     const [nextTheme] = themeOptions.filter((t) => t !== currentTheme);
     setTheme(nextTheme);
   };
+
+
+  if (document.title !== PageTitle) document.title = PageTitle;
+  if (document.querySelector('meta[name="description"]') !== PageDescription) document.querySelector('meta[name="description"]').setAttribute("content", PageDescription);
 
   return (
     <ThemeProvider theme={themes[currentTheme]}>
