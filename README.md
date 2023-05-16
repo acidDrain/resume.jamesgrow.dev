@@ -1,6 +1,6 @@
 # My Resume
 
-This repository contains the source for my [resume](https://grow.elasticplayground.com/).
+This repository contains the source for my [resume](https://resume.jamesgrow.dev/).
 
 ## About Me
 
