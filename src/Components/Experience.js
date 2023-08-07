@@ -435,7 +435,9 @@ const FlexDuration = styled(FlexItem)`
 
 const CompanyRecordHeaderWrapper = (
   { endDate, startDate, duration, company, title, location },
-) => (
+) => {
+  const dateString = formatDateString(endDate);
+  return (
     <StyledCompanyRecordHeader>
       <Row>
         <FlexTitle variant="fg">
@@ -453,7 +455,7 @@ const CompanyRecordHeaderWrapper = (
       <Row>
         <FlexItem variant="fg2">{formatDateString(startDate)}</FlexItem>
         <FlexItem>&nbsp;-&nbsp;</FlexItem>
-        <FlexItem variant="fg2">{formatDateString(endDate)}</FlexItem>
+        <FlexItem variant={(formatDateString(endDate) === "Current") ? "green" : "fg2"}>{dateString === "Current" && <strong>{dateString}</strong> || dateString}</FlexItem>
       </Row>
       <Row>
         <FlexItem variant="fg4">
@@ -462,6 +464,7 @@ const CompanyRecordHeaderWrapper = (
       </Row>
     </StyledCompanyRecordHeader>
 );
+}
 
 const StyledCompanyNameAndDuration = styled.div`
   display: flex;
@@ -522,7 +525,7 @@ const Experience = ({ experience, ...props }) => {
                   &&
                   <CompanyNameAndDuration
                     company={company}
-                    duration={toDuration(toMonths(toDays(getLatestTime({ positions }), getEarliestTime({ positions }))))}
+                    duration={toDuration(getLatestTime({ positions }), getEarliestTime({ positions }))}
                   />
               }
               {positions.map((
@@ -540,7 +543,7 @@ const Experience = ({ experience, ...props }) => {
                         title={title}
                         startDate={startDate}
                         endDate={endDate}
-                        duration={toDuration(toMonths(toDays(endDate, startDate)))}
+                        duration={toDuration(endDate, startDate)}
                         company={company}
                         location={location}
                       />
@@ -549,7 +552,7 @@ const Experience = ({ experience, ...props }) => {
                         title={title}
                         startDate={startDate}
                         endDate={endDate}
-                        duration={toDuration(toMonths(toDays(endDate, startDate)))}
+                        duration={toDuration(endDate, startDate)}
                         company={""}
                         location={location}
                       />

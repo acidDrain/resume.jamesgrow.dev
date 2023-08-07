@@ -12,7 +12,14 @@ const toDays = (end, start) => Math.floor((end-start)/(86400*1000.0));
 
 const toMonths = days => Math.floor(days/30);
 
-const toDuration = months => {
+const toDuration = (end, start) => {
+  let _end;
+  if ((!end || end <= 0) && start) {
+    _end = Date.now();
+  } else {
+    _end = end;
+  }
+  const months = toMonths(toDays(_end, start));
   if (months%12) {
     const years = Math.floor(months/12);
     if (years > 0) {
@@ -29,7 +36,13 @@ const toDuration = months => {
   }
 };
 
-const formatDateString = dateString => `${new Date(dateString).toDateString().split(" ")[1]} ${new Date(dateString).toDateString().split(" ")[3]}`
+const formatDateString = dateString => {
+  if (parseInt(dateString) >= 0)
+    return `${new Date(dateString).toDateString().split(" ")[1]} ${new Date(dateString).toDateString().split(" ")[3]}`
+  else
+    return `Current`
+}
+;
 
 const getLatestTime = ({ positions }) => positions.map(p => p.endDate).reduce((acc, curr) => (curr >= acc) ? curr : acc);
 
